@@ -5,66 +5,57 @@
 
 ## 1. Zakres funkcjonalny
 
-Projekt implementuje konsolowy analizator wydatków osobistych z graficznym raportem HTML.
-System realizuje następujące funkcje:
+Projekt to konsolowa aplikacja do analizy wydatków osobistych. Wczytuje dane z CSV lub JSON, grupuje je po kategoriach i okresach, wykrywa podejrzanie duże transakcje i generuje predykcję na kolejne miesiące. Wyniki trafiają do interaktywnego raportu HTML.
 
 | Nr | Funkcja | Moduł |
 |----|---------|-------|
-| F1 | Import danych z pliku CSV lub JSON | `io.CsvReader`, `io.JsonReader` |
-| F2 | Kategoryzacja wydatków (6 kategorii) i sumowanie wg kategorii | `processing.ExpenseAggregator` |
+| F1 | Import danych z CSV lub JSON | `io.CsvReader`, `io.JsonReader` |
+| F2 | Sumowanie wydatków wg kategorii | `processing.ExpenseAggregator` |
 | F3 | Sumowanie wg okresu: dzień / tydzień ISO / miesiąc | `processing.ExpenseAggregator` |
 | F4 | Filtrowanie po dacie, kategorii, kwocie i słowie kluczowym | `processing.Filters`, `ExpenseFilter` |
 | F5 | Wykrywanie anomalii metodą IQR (Tukey's fence) | `analysis.AnomalyDetector` |
-| F6 | Wykrywanie anomalii metodą odchylenia standardowego (Z-score 2σ) | `analysis.AnomalyDetector` |
-| F7 | Analiza trendów miesięcznych i tygodniowych + stopa wzrostu | `analysis.TrendAnalyzer` |
-| F8 | Predykcja metodą regresji liniowej MKW z miarą R² | `analysis.ExpensePredictor` |
-| F9 | Predykcja metodą wykładniczej średniej kroczącej (EMA) | `analysis.ExpensePredictor` |
-| F10 | Eksport interaktywnego raportu HTML z wykresami (Chart.js) | `visualization.HtmlChartExporter` |
+| F6 | Wykrywanie anomalii metodą Z-score (2σ) | `analysis.AnomalyDetector` |
+| F7 | Trendy miesięczne i tygodniowe + stopa wzrostu między okresami | `analysis.TrendAnalyzer` |
+| F8 | Predykcja regresją liniową MKW z miarą pewności R² | `analysis.ExpensePredictor` |
+| F9 | Predykcja wykładniczą średnią kroczącą (EMA) | `analysis.ExpensePredictor` |
+| F10 | Eksport raportu HTML z wykresami Chart.js | `visualization.HtmlChartExporter` |
 
-Dataset testowy zawiera **651 syntetycznych transakcji** z okresu 2024-01-01 – 2024-12-31,
-w sześciu kategoriach (JEDZENIE, TRANSPORT, ROZRYWKA, RACHUNKI, ZDROWIE, ZAKUPY),
-z celowo wprowadzonymi **10 anomaliami** (np. laptop 1 750 PLN, wynajem auta 980 PLN).
+Jako dane testowe wygenerowałam 651 syntetycznych transakcji z 2024 roku w sześciu kategoriach (JEDZENIE, TRANSPORT, ROZRYWKA, RACHUNKI, ZDROWIE, ZAKUPY). Żeby przetestować wykrywanie anomalii, celowo wstawiłam 10 transakcji znacznie odbiegających od normy – np. laptop za 1 750 PLN czy wynajem auta za 980 PLN.
 
 ---
 
 ## 2. Architektura projektu
 
-### 2.1 Struktura pakietów
+Projekt podzieliłam na pięć pakietów według jednej prostej zasady: efekty uboczne (czytanie pliku, zapis na dysk) mają prawo istnieć tylko w `io/` i `Main.java`. Cała reszta – `processing/`, `analysis/`, `visualization/` – to czyste funkcje, które nie wiedzą o istnieniu systemu plików.
 
 ```
 pl.fp.wydatki/
-├── model/          – niemutowalne rekordy (Expense, CategorySummary, Anomaly, …)
-├── io/             – JEDYNE miejsce efektów ubocznych (czytanie plików, zapis HTML)
-├── processing/     – czyste funkcje filtrowania i agregacji
-├── analysis/       – czyste funkcje analizy trendów, anomalii i predykcji
-├── visualization/  – czysta funkcja generowania HTML
-└── Main.java       – punktstykowy: orkiestruje I/O ↔ czysta logika
+├── model/          – niemutowalne rekordy
+├── io/             – I/O: jedyne miejsce efektów ubocznych
+├── processing/     – filtrowanie i agregacja
+├── analysis/       – anomalie, trendy, predykcja
+├── visualization/  – generowanie HTML
+└── Main.java       – orkiestruje I/O ↔ logika
 ```
 
-### 2.2 Kluczowa zasada architektoniczna: separacja I/O od logiki czystej
-
-Projekt stosuje wzorzec znany z Haskella jako *"IO monad at the edges"*:
-efekty uboczne (czytanie pliku, zapis na dysk) są celowo ograniczone do pakietu `io/`
-i metody `main`. Wszystkie pakiety `processing/`, `analysis/` i `visualization/`
-zawierają **wyłącznie czyste funkcje** – nigdy nie odczytują stanu zewnętrznego
-ani nie modyfikują żadnych współdzielonych danych.
-
-Przepływ danych jest jednokierunkowy:
+Przepływ danych jest zawsze jednokierunkowy:
 
 ```
 Plik CSV/JSON
-     ↓  (I/O – CsvReader / JsonReader)
-List<Expense>   ← niemutowalna, tworzona raz
+     ↓  (I/O)
+List<Expense>            ← tworzona raz, nigdy nie modyfikowana
      ↓  (czyste funkcje)
-List<CategorySummary>  ←  ExpenseAggregator.summarizeByCategory(expenses)
-List<TrendPoint>       ←  TrendAnalyzer.monthlyTrend(expenses)
-List<Anomaly>          ←  AnomalyDetector.detectByIQR(expenses)
-List<Prediction>       ←  ExpensePredictor.predictLinear(monthly, 3)
+List<CategorySummary>
+List<TrendPoint>
+List<Anomaly>
+List<Prediction>
      ↓  (czysta funkcja)
-String (HTML)          ←  HtmlChartExporter.export(...)
-     ↓  (I/O – ResultExporter)
+String (HTML)
+     ↓  (I/O)
 raport.html
 ```
+
+To podejście jest zainspirowane zasadą *"IO at the edges"* z Haskella – i bardzo ułatwia testowanie, bo żaden test nie musi otwierać pliku ani mockować systemu plików.
 
 ---
 
@@ -72,13 +63,9 @@ raport.html
 
 ### 3.1 Niemutowalne klasy danych – `record`
 
-Zamiast klas JavaBean z getterami i setterami, wszystkie obiekty domenowe
-są zadeklarowane jako `record`. Kompilator automatycznie generuje konstruktor,
-akcesory, `equals`, `hashCode` i `toString` – i **nie generuje setterów**.
-Obiekt jest niemodyfikowalny od momentu powstania.
+Zamiast klas z getterami i setterami wszystkie obiekty domenowe to `record`. Kompilator sam generuje konstruktor, akcesory, `equals`, `hashCode` i `toString` – i nie generuje żadnych setterów, więc obiekt nie może zostać zmodyfikowany po powstaniu.
 
 ```java
-// model/Expense.java
 public record Expense(
         int        id,
         LocalDate  date,
@@ -88,35 +75,21 @@ public record Expense(
 ) {}
 ```
 
-Użycie:
-
-```java
-Expense e = new Expense(1, LocalDate.of(2024,1,10),
-                        new BigDecimal("55.00"), Category.JEDZENIE, "Lidl");
-e.amount();   // akcesor – tylko odczyt
-// e.amount = ...  ← błąd kompilacji – niemożliwe
-```
-
-W projekcie zdefiniowano **7 rekordów**: `Expense`, `CategorySummary`, `Anomaly`,
-`TrendPoint`, `Prediction` oraz zagnieżdżone `AnomalyType.StdDev` i `AnomalyType.IQR`.
+W projekcie zdefiniowałam 7 rekordów: `Expense`, `CategorySummary`, `Anomaly`, `TrendPoint`, `Prediction` oraz zagnieżdżone `AnomalyType.StdDev` i `AnomalyType.IQR`.
 
 ### 3.2 Sealed interface jako algebraiczny typ sumy
 
-`AnomalyType` reprezentuje dwa możliwe warianty wykrytej anomalii.
-Zamiast pola-flagi (`String method = "IQR"`) użyto sealed interface:
+Typ `AnomalyType` ma dwa warianty – anomalia wykryta przez IQR albo przez odchylenie standardowe. Zamiast trzymać metodę jako `String` lub `enum`, użyłam `sealed interface`. Dzięki temu każdy wariant niesie swoje własne dane parametryczne i kompilator wymusi obsługę nowego wariantu wszędzie, gdyby ktoś dodał go do `permits`.
 
 ```java
-// model/AnomalyType.java
 public sealed interface AnomalyType permits AnomalyType.StdDev, AnomalyType.IQR {
-
-    String label();   // polimorfizm zamiast if-else
+    String label();
 
     record StdDev(double sigmaMultiplier, double threshold) implements AnomalyType {
         public String label() {
             return String.format("StdDev (%.1fσ, próg=%.2f)", sigmaMultiplier, threshold);
         }
     }
-
     record IQR(double iqrMultiplier, double upperFence) implements AnomalyType {
         public String label() {
             return String.format("IQR (x%.1f, górny płot=%.2f)", iqrMultiplier, upperFence);
@@ -125,80 +98,53 @@ public sealed interface AnomalyType permits AnomalyType.StdDev, AnomalyType.IQR 
 }
 ```
 
-Kluczowa właściwość: kompilator **wymusza wyczerpanie wariantów** przy `instanceof`.
-Dodanie nowego wariantu do `permits` spowoduje błąd kompilacji w każdym miejscu,
-które nie obsługuje nowego przypadku – jest to odpowiednik *exhaustive pattern matching*
-z języków funkcyjnych (ML, Haskell, Scala).
+### 3.3 Kompozycja predykatów
 
-### 3.3 Fabryka predykatów i kompozycja funkcji
-
-Klasa `Filters` to fabryka **wartości funkcyjnych** – każda metoda zwraca
-`Predicate<Expense>`, który można składać operatorami `.and()`, `.or()`, `.negate()`.
+`Filters` to klasa z metodami zwracającymi `Predicate<Expense>`. Każdy predykat można potem dowolnie składać przez `.and()`, `.or()`, `.negate()` bez tworzenia nowych klas.
 
 ```java
-// processing/Filters.java  (fragment)
-public static Predicate<Expense> byCategory(Category category) {
-    return e -> e.category() == category;
-}
-
 public static Predicate<Expense> byAmountRange(BigDecimal min, BigDecimal max) {
-    // kompozycja przez .and() – bez jawnego if-else
     return byMinAmount(min).and(byMaxAmount(max));
 }
 ```
 
-W `Main.java` predykaty są łączone dynamicznie:
+Ciekawszy przypadek to filtrowanie po liście kategorii – zdecydowałam się na fold po predykatach zamiast prostego `categories.contains(...)`, żeby pokazać kompozycję funkcyjną:
 
 ```java
-List<Expense> filtered = ExpenseFilter.filter(expenses,
-        Filters.byMinAmount(new BigDecimal("300.00"))
-               .and(Filters.byCategory(Category.ZAKUPY)));
-```
-
-Metoda `filterByCategories` demonstruje **fold po predykatach** –
-redukuje listę kategorii do jednego złożonego predykatu bez pętli:
-
-```java
-// processing/ExpenseFilter.java
 Predicate<Expense> combined = categories.stream()
-        .map(Filters::byCategory)            // Stream<Predicate<Expense>>
-        .reduce(__ -> false, (a, b) -> a.or(b));  // złóż: false OR cat1 OR cat2 ...
+        .map(Filters::byCategory)
+        .reduce(__ -> false, (a, b) -> a.or(b));
 ```
 
-Jest to funkcyjny odpowiednik `fold` / `reduce` z języków takich jak Haskell czy Clojure.
+To funkcyjny odpowiednik `false OR cat1 OR cat2 OR ...` – bez żadnej zmiennej pośredniej.
 
 ### 3.4 Stream API i Collectors – agregacja bez mutacji
 
-Agregacja wydatków nie używa żadnej zmiennej ani kolekcji pośredniej:
+Agregacja wydatków wg kategorii nie używa żadnej zmiennej ani kolekcji pośredniej. Cały GROUP BY + obliczenie sumy/średniej/liczby to jeden pipeline:
 
 ```java
-// processing/ExpenseAggregator.java  (fragment)
 public static List<CategorySummary> summarizeByCategory(List<Expense> expenses) {
     return expenses.stream()
             .collect(Collectors.groupingBy(
-                    Expense::category,               // referencja do metody
+                    Expense::category,
                     Collectors.collectingAndThen(
                             Collectors.toList(),
-                            ExpenseAggregator::toCategorySummary  // transformacja grupy
+                            ExpenseAggregator::toCategorySummary
                     )
             ))
             .values().stream()
             .sorted(Comparator.comparing(CategorySummary::total).reversed())
-            .toList();  // Stream.toList() → lista niemodyfikowalna (Java 16+)
+            .toList();   // Stream.toList() → lista niemodyfikowalna
 }
 ```
 
-`Collectors.groupingBy` + `collectingAndThen` to funkcyjny odpowiednik
-`GROUP BY + SELECT` z SQL – transformacja opisana deklaratywnie, bez jawnych pętli.
-`Stream.toList()` gwarantuje, że wynik jest niemodyfikowalny.
+`collectingAndThen` pozwala od razu przetransformować zebraną grupę w rekord – nie ma etapu "zbierz do mapy, potem iteruj po mapie".
 
-### 3.5 Switch expression jako wyrażenie (nie instrukcja)
+### 3.5 Switch expression jako wartość
 
-W `ExpenseAggregator.trendByPeriod` wybór funkcji klucza grupowania jest
-wyrażeniem, które zwraca wartość – nie instrukcją ze zmienną pośrednią:
+W `trendByPeriod` wybór funkcji kluczowania jest wyrażeniem – nie blokiem if-else ze zmienną pośrednią. Funkcja `keyFn` to tu pełnoprawna wartość, którą można przekazać dalej:
 
 ```java
-// processing/ExpenseAggregator.java
 Function<Expense, String> keyFn = switch (period) {
     case DAY   -> e -> e.date().toString();
     case WEEK  -> e -> e.date().getYear() + "-W" +
@@ -209,19 +155,14 @@ Function<Expense, String> keyFn = switch (period) {
 return aggregateByKey(expenses, keyFn);
 ```
 
-Funkcja `keyFn` jest tu **wartością pierwszoklasową** – wybraną spośród trzech lambd
-i przekazaną dalej. To idiomat z programowania funkcyjnego niedostępny w klasycznym `if-else`.
+### 3.6 Funkcja wyższego rzędu – strategia przez `Function`
 
-### 3.6 Funkcja wyższego rzędu – Strategy przez Function
-
-`AnomalyDetector.detectPerCategory` przyjmuje strategię wykrywania
-jako parametr typu `Function<List<Expense>, List<Anomaly>>`:
+`AnomalyDetector` ma wspólny szkielet `detectPerCategory`, który przyjmuje strategię wykrywania jako parametr `Function<List<Expense>, List<Anomaly>>`. Dzięki temu obie metody (IQR i StdDev) nie powtarzają kodu grupowania po kategoriach:
 
 ```java
-// analysis/AnomalyDetector.java
 private static List<Anomaly> detectPerCategory(
         List<Expense> expenses,
-        Function<List<Expense>, List<Anomaly>> detector) {  // strategia jako wartość
+        Function<List<Expense>, List<Anomaly>> detector) {
 
     return expenses.stream()
             .collect(Collectors.groupingBy(Expense::category))
@@ -240,15 +181,13 @@ public static List<Anomaly> detectByIQR(List<Expense> expenses) {
 }
 ```
 
-Wzorzec Strategy zrealizowany przez funkcję wyższego rzędu zamiast dziedziczenia –
-brak klas `StdDevStrategy implements AnomalyStrategy`, brak hierarchii obiektów.
+Wzorzec Strategy bez hierarchii klas, bez dziedziczenia – tylko referencja do metody.
 
-### 3.7 IntStream.range jako funkcyjny generator indeksów
+### 3.7 IntStream.range jako generator indeksów
 
-Średnia krocząca i predykcja operują na indeksach bez zmiennych pętli:
+Przy obliczaniu średniej kroczącej potrzebowałam indeksu, żeby wiedzieć jaka jest szerokość okna. Zamiast pętli `for` użyłam `IntStream.range` – wewnątrz `mapToObj` mam dostęp do indeksu bez żadnej zmiennej zewnętrznej:
 
 ```java
-// analysis/TrendAnalyzer.java
 public static List<TrendPoint> movingAverage(List<TrendPoint> trend, int windowSize) {
     return IntStream.range(0, trend.size())
             .mapToObj(i -> {
@@ -264,16 +203,13 @@ public static List<TrendPoint> movingAverage(List<TrendPoint> trend, int windowS
 }
 ```
 
-`IntStream.rangeClosed` jest analogicznie używany w `ExpensePredictor.predictLinear`
-do generowania kolejnych miesięcy predykcji.
+`IntStream.rangeClosed` jest tak samo używany w predykcji do generowania kolejnych miesięcy.
 
-### 3.8 Separacja czystej funkcji od I/O w warstwie IO
+### 3.8 Czysta funkcja parsowania w warstwie I/O
 
-W `CsvReader` transformacja wiersza CSV na `Expense` jest wydzielona
-jako **package-private stała funkcyjna** – testowalna bez angażowania systemu plików:
+W `CsvReader` transformacja wiersza CSV na `Expense` jest wydzielona jako package-private stała – można ją testować bezpośrednio, bez otwierania żadnego pliku:
 
 ```java
-// io/CsvReader.java
 // Czysta funkcja: String[] → Expense
 static final Function<String[], Expense> ROW_TO_EXPENSE = row -> new Expense(
         Integer.parseInt(row[0].trim()),
@@ -286,22 +222,20 @@ static final Function<String[], Expense> ROW_TO_EXPENSE = row -> new Expense(
 public static List<Expense> read(Reader reader) throws IOException, CsvException {
     try (CSVReader csv = new CSVReader(reader)) {
         return csv.readAll().stream()
-                .skip(1)          // nagłówek
-                .map(ROW_TO_EXPENSE)   // aplikacja czystej funkcji
+                .skip(1)
+                .map(ROW_TO_EXPENSE)
                 .toList();
     }
 }
 ```
 
-Efekt uboczny (otwarcie pliku) jest ograniczony do jednej linii `new CSVReader(reader)`.
-Reszta metody to czysta transformacja potoku danych.
+Efekt uboczny (otwarcie pliku) jest w jednej linii. Reszta to czysta transformacja potoku.
 
 ### 3.9 Generowanie HTML jako czysta transformacja
 
-`HtmlChartExporter.export` jest czystą funkcją `(dane) → String`:
+`HtmlChartExporter.export` to czysta funkcja – bierze dane, zwraca `String`. Nie dotyka dysku. Zapis do pliku należy do `ResultExporter`, żeby I/O zostało po swojej stronie granicy.
 
 ```java
-// visualization/HtmlChartExporter.java  (fragment)
 public static String export(
         List<CategorySummary> summaries,
         List<TrendPoint> monthlyTrend,
@@ -317,76 +251,41 @@ public static String export(
 }
 ```
 
-Metoda nie dotyka systemu plików – zwraca `String`. Zapis do pliku jest obowiązkiem
-wywołującego (`ResultExporter.writeHtml`), co jest bezpośrednią implementacją
-zasady *"push I/O to the edges"*.
+Szablon HTML z wbudowanym Chart.js jest stałą w tej samej klasie – Java generuje string, przeglądarka renderuje wykres.
 
 ---
 
-## 4. Testy jednostkowe – weryfikacja czystości i determinizmu
+## 4. Testy jednostkowe
 
-Napisano **47 testów JUnit 5** w 4 klasach testowych, które wprost weryfikują
-właściwości wymagane przez programowanie funkcyjne.
+Napisałam 47 testów JUnit 5 w czterech klasach. Większość z nich wprost sprawdza właściwości, które w FP są kluczowe – determinizm i brak efektów ubocznych.
 
-### 4.1 Determinizm – ta sama funkcja zawsze daje ten sam wynik
+**Determinizm** – ta sama funkcja wywołana dwa razy z tymi samymi danymi musi dać identyczny wynik:
 
 ```java
-// ExpenseFilterTest.java
 @Test
 void filter_isDeterministic() {
     Predicate<Expense> pred = Filters.byCategory(Category.JEDZENIE);
     assertEquals(ExpenseFilter.filter(SAMPLE, pred),
                  ExpenseFilter.filter(SAMPLE, pred));
 }
-
-// ExpensePredictorTest.java
-@Test
-void predictLinear_isDeterministic() {
-    assertEquals(
-        ExpensePredictor.predictLinear(LINEAR, 3),
-        ExpensePredictor.predictLinear(LINEAR, 3));
-}
 ```
 
-### 4.2 Brak efektów ubocznych – lista wejściowa nie jest modyfikowana
+**Brak efektów ubocznych** – filtrowanie nie może modyfikować listy wejściowej:
 
 ```java
-// ExpenseFilterTest.java
 @Test
 void filter_doesNotMutateInput() {
     List<Expense> originalCopy = List.copyOf(SAMPLE);
     ExpenseFilter.filter(SAMPLE, Filters.byMinAmount(new BigDecimal("100.00")));
-    assertEquals(originalCopy, SAMPLE, "Lista wejściowa nie może zostać zmodyfikowana");
+    assertEquals(originalCopy, SAMPLE);
 }
 ```
 
-### 4.3 Niemodyfikowalność wyników – Stream.toList()
+Kilka testów sprawdza też poprawność matematyczną – np. że regresja liniowa na danych 100→200→300→400 daje dokładnie 500 PLN z R²=1.0:
 
 ```java
-// ExpenseFilterTest.java
-@Test
-void filter_resultIsUnmodifiable() {
-    List<Expense> result = ExpenseFilter.filter(SAMPLE, Filters.byCategory(Category.JEDZENIE));
-    assertThrows(UnsupportedOperationException.class,
-            () -> result.add(SAMPLE.get(0)));
-}
-```
-
-### 4.4 Poprawność matematyczna funkcji statystycznych
-
-```java
-// AnomalyDetectorTest.java
-@Test
-void stdDev_knownValue() {
-    // Klasyczny przykład: {2,4,4,4,5,5,7,9} → stdDev = 2.0
-    double[] v = {2, 4, 4, 4, 5, 5, 7, 9};
-    assertEquals(2.0, AnomalyDetector.stdDev(v, AnomalyDetector.mean(v)), 1e-9);
-}
-
-// ExpensePredictorTest.java
 @Test
 void predictLinear_exactValueForPerfectLinearTrend() {
-    // 100,200,300,400 → slope=100, intercept=100 → predict(x=4)=500
     Prediction p = ExpensePredictor.predictLinear(LINEAR, 1).get(0);
     assertEquals(new BigDecimal("500.00"), p.predictedAmount());
 }
@@ -398,74 +297,25 @@ void predictLinear_r2EqualsOneForPerfectFit() {
 }
 ```
 
-### 4.5 Wyniki testów
+Wyniki: **47 testów, 0 błędów**.
 
-```
-Tests run: 47, Failures: 0, Errors: 0, Skipped: 0  →  BUILD SUCCESS
-```
-
-| Klasa testowa | Testów | Weryfikuje |
+| Klasa testowa | Testów | Co sprawdza |
 |---|---|---|
 | `ExpenseFilterTest` | 10 | filtrowanie, kompozycja predykatów, brak mutacji, niemutowalny wynik |
 | `ExpenseAggregatorTest` | 11 | sumy, liczba, średnia, kolejność, determinizm |
-| `AnomalyDetectorTest` | 14 | IQR, StdDev, brak fałszywych pozytywów, sealed interface, statystyki |
+| `AnomalyDetectorTest` | 14 | IQR, StdDev, brak fałszywych pozytywów, sealed interface, funkcje statystyczne |
 | `ExpensePredictorTest` | 12 | regresja liniowa, R², EMA, brak ujemnych kwot |
 
 ---
 
 ## 5. Wnioski
 
-### 5.1 Co przyniosło styl funkcyjny
+Największą zaletą stylu funkcyjnego okazała się dla mnie **testowalność**. Funkcje w `processing/` i `analysis/` nie mają żadnych zależności zewnętrznych – można je wywołać z dowolnymi danymi i od razu zobaczyć wynik. Nie trzeba konfigurować żadnego środowiska, nie trzeba mockować bazy ani systemu plików. Wszystkie 47 testów to proste `assertEquals` na danych w pamięci.
 
-**Testowalność bez mocków.** Czyste funkcje nie mają zależności od stanu zewnętrznego,
-więc wszystkie 47 testów operuje bezpośrednio na danych – nie ma potrzeby konfigurowania
-środowiska ani stosowania frameworków do mockowania.
+Drugie co mi się podobało to **kompozycja zamiast dziedziczenia**. Wzorzec Strategy w `AnomalyDetector` – przekazanie funkcji `Function<List<Expense>, List<Anomaly>>` jako parametru – jest dużo czytelniejszy niż tworzenie hierarchii klas `StdDevStrategy implements AnomalyStrategy`. Mniej kodu, ta sama elastyczność.
 
-**Lokalność rozumowania.** Każda metoda w `processing/` i `analysis/` jest samowystarczalna:
-wynik zależy wyłącznie od parametrów. Przy debugowaniu można uruchomić funkcję izolowanie
-z dowolnymi danymi i przewidzieć wynik bez śledzenia stanu aplikacji.
+Były też ograniczenia, które trochę utrudniały pracę. Java nie przepuszcza checked exceptions przez lambdy, więc tam gdzie parsowanie mogło się nie udać (CSV, JSON), musiałam trzymać I/O poza strumieniami. Trochę nieeleganckie, ale nie dało się tego łatwo obejść bez własnych wrapperów.
 
-**Kompozycja zamiast dziedziczenia.** Wzorce Strategy i Builder zostały zastąpione
-przez przekazywanie funkcji (`Function<A,B>`, `Predicate<T>`). Przykładem jest
-`detectPerCategory` przyjmujący strategię wykrywania jako parametr –
-brak klas pośrednich i hierarchii dziedziczenia.
+Wyczerpujące `switch` dla sealed interfaces działa w Javie 21 jako pełna funkcja (w 17 było to preview), więc korzystałam z niego m.in. w `ExpenseAggregator` do wyboru funkcji kluczowania. To jeden z tych momentów gdzie Java faktycznie zaczyna przypominać język funkcyjny.
 
-**Niezmienniczość danych.** Wszystkie `record`y i wyniki `Stream.toList()` są niemodyfikowalne.
-Umożliwia to bezpieczne współdzielenie list między wieloma wywołaniami funkcji
-(np. `expenses` jest przekazywane do kilku niezależnych potoków przetwarzania).
-
-### 5.2 Ograniczenia FP w Javie
-
-Java nie jest językiem funkcyjnym z natury. Kilka ograniczeń wpłynęło na projekt:
-
-- **Checked exceptions** nie współpracują ze strumieniami – stąd `CsvReader.read`
-  musi korzystać z `try-with-resources` poza strumieniem; nie można użyć go
-  bezpośrednio wewnątrz `map()`.
-
-- **Brak wyczerpującego switch dla sealed interfaces** w Java 17 (dodany dopiero w Java 21) –
-  rozwiązaniem było przeniesienie logiki opisu wariantu do metody `label()` na interfejsie.
-
-- **`BigDecimal` jako typ wartościowy** – `reduce(BigDecimal.ZERO, BigDecimal::add)`
-  jest idiomatyczne, ale `BigDecimal::add` jest metodą instancji (zwracającą nową wartość),
-  co wymaga świadomości różnicy z matematycznym `+`.
-
-### 5.3 Podsumowanie zastosowanych technik FP
-
-| Technika | Implementacja w projekcie |
-|---|---|
-| Niemutowalne struktury danych | `record Expense`, `record Anomaly`, `Stream.toList()` |
-| Algebraiczne typy sumy | `sealed interface AnomalyType permits StdDev, IQR` |
-| Funkcje jako wartości | `Function<String[], Expense>`, `Predicate<Expense>` jako pola/parametry |
-| Funkcje wyższego rzędu | `detectPerCategory(expenses, Function<…>)` |
-| Kompozycja funkcji | `Filters.byMinAmount(x).and(Filters.byCategory(c))` |
-| Fold / reduce | `categories.stream().map(…).reduce(false, Predicate::or)` |
-| Czyste funkcje | wszystkie metody w `processing/`, `analysis/`, `visualization/` |
-| Separacja I/O | efekty uboczne wyłącznie w `io/` i `Main.java` |
-| Switch expression jako wartość | `Function<Expense,String> keyFn = switch (period) { … }` |
-| Deklaratywna agregacja | `Collectors.groupingBy` + `collectingAndThen` + `Comparator` |
-
----
-
-*Raport przygotowany w ramach projektu z Programowania Funkcyjnego.*
-*Kod źródłowy: `src/main/java/pl/fp/wydatki/`*
-*Testy: `src/test/java/pl/fp/wydatki/` — `mvn test` → 47 testów, 0 błędów.*
+Ogólnie – styl funkcyjny sprawdził się w tym projekcie dobrze, szczególnie w warstwie analizy danych gdzie chodzi o transformacje: wejście → wyjście, bez stanu. Gdybym robiła projekt z interfejsem graficznym albo bazą danych, pewnie ta równowaga między FP a OOP wyglądałaby inaczej.
