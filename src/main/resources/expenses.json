@@ -1,0 +1,4559 @@
+[
+  {
+    "id": 1,
+    "date": "2024-01-01",
+    "amount": 74.8,
+    "category": "JEDZENIE",
+    "description": "Żabka"
+  },
+  {
+    "id": 2,
+    "date": "2024-01-01",
+    "amount": 33.76,
+    "category": "TRANSPORT",
+    "description": "MPK bilet miesięczny"
+  },
+  {
+    "id": 3,
+    "date": "2024-01-02",
+    "amount": 60.81,
+    "category": "JEDZENIE",
+    "description": "Biedronka"
+  },
+  {
+    "id": 4,
+    "date": "2024-01-03",
+    "amount": 84.09,
+    "category": "JEDZENIE",
+    "description": "Burger King"
+  },
+  {
+    "id": 5,
+    "date": "2024-01-03",
+    "amount": 41.07,
+    "category": "TRANSPORT",
+    "description": "BP paliwo"
+  },
+  {
+    "id": 6,
+    "date": "2024-01-03",
+    "amount": 8.0,
+    "category": "ROZRYWKA",
+    "description": "Helios"
+  },
+  {
+    "id": 7,
+    "date": "2024-01-03",
+    "amount": 277.37,
+    "category": "ZAKUPY",
+    "description": "IKEA"
+  },
+  {
+    "id": 8,
+    "date": "2024-01-04",
+    "amount": 82.68,
+    "category": "JEDZENIE",
+    "description": "Biedronka"
+  },
+  {
+    "id": 9,
+    "date": "2024-01-05",
+    "amount": 159.15,
+    "category": "ZAKUPY",
+    "description": "Zara"
+  },
+  {
+    "id": 10,
+    "date": "2024-01-06",
+    "amount": 215.49,
+    "category": "ZAKUPY",
+    "description": "RTV Euro AGD"
+  },
+  {
+    "id": 11,
+    "date": "2024-01-07",
+    "amount": 48.75,
+    "category": "JEDZENIE",
+    "description": "Warzywnik"
+  },
+  {
+    "id": 12,
+    "date": "2024-01-07",
+    "amount": 73.54,
+    "category": "TRANSPORT",
+    "description": "Autopay autostrada"
+  },
+  {
+    "id": 13,
+    "date": "2024-01-07",
+    "amount": 63.02,
+    "category": "ROZRYWKA",
+    "description": "Pub Złoty Kielich"
+  },
+  {
+    "id": 14,
+    "date": "2024-01-08",
+    "amount": 40.19,
+    "category": "JEDZENIE",
+    "description": "Restauracja Stara Kamienica"
+  },
+  {
+    "id": 15,
+    "date": "2024-01-08",
+    "amount": 97.91,
+    "category": "ZDROWIE",
+    "description": "Dentysta"
+  },
+  {
+    "id": 16,
+    "date": "2024-01-09",
+    "amount": 73.09,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 17,
+    "date": "2024-01-09",
+    "amount": 21.39,
+    "category": "TRANSPORT",
+    "description": "Autopay autostrada"
+  },
+  {
+    "id": 18,
+    "date": "2024-01-10",
+    "amount": 34.21,
+    "category": "JEDZENIE",
+    "description": "Piekarnia"
+  },
+  {
+    "id": 19,
+    "date": "2024-01-10",
+    "amount": 16.73,
+    "category": "TRANSPORT",
+    "description": "Bolt"
+  },
+  {
+    "id": 20,
+    "date": "2024-01-10",
+    "amount": 86.75,
+    "category": "ZDROWIE",
+    "description": "Apteka Dr. Max"
+  },
+  {
+    "id": 21,
+    "date": "2024-01-10",
+    "amount": 214.76,
+    "category": "ZAKUPY",
+    "description": "IKEA"
+  },
+  {
+    "id": 22,
+    "date": "2024-01-11",
+    "amount": 86.88,
+    "category": "JEDZENIE",
+    "description": "McDonald's"
+  },
+  {
+    "id": 23,
+    "date": "2024-01-12",
+    "amount": 94.08,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 24,
+    "date": "2024-01-12",
+    "amount": 56.17,
+    "category": "TRANSPORT",
+    "description": "Autopay autostrada"
+  },
+  {
+    "id": 25,
+    "date": "2024-01-12",
+    "amount": 127.74,
+    "category": "ZAKUPY",
+    "description": "Amazon"
+  },
+  {
+    "id": 26,
+    "date": "2024-01-13",
+    "amount": 3.33,
+    "category": "ROZRYWKA",
+    "description": "Teatr Miejski"
+  },
+  {
+    "id": 27,
+    "date": "2024-01-14",
+    "amount": 57.44,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 28,
+    "date": "2024-01-14",
+    "amount": 50.7,
+    "category": "ZAKUPY",
+    "description": "RTV Euro AGD"
+  },
+  {
+    "id": 29,
+    "date": "2024-01-16",
+    "amount": 45.57,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 30,
+    "date": "2024-01-16",
+    "amount": 67.48,
+    "category": "ROZRYWKA",
+    "description": "Teatr Miejski"
+  },
+  {
+    "id": 31,
+    "date": "2024-01-17",
+    "amount": 36.83,
+    "category": "TRANSPORT",
+    "description": "Uber"
+  },
+  {
+    "id": 32,
+    "date": "2024-01-18",
+    "amount": 114.52,
+    "category": "ROZRYWKA",
+    "description": "Spotify"
+  },
+  {
+    "id": 33,
+    "date": "2024-01-19",
+    "amount": 86.85,
+    "category": "JEDZENIE",
+    "description": "Żabka"
+  },
+  {
+    "id": 34,
+    "date": "2024-01-19",
+    "amount": 42.47,
+    "category": "TRANSPORT",
+    "description": "PKP Intercity"
+  },
+  {
+    "id": 35,
+    "date": "2024-01-20",
+    "amount": 94.45,
+    "category": "JEDZENIE",
+    "description": "Piekarnia"
+  },
+  {
+    "id": 36,
+    "date": "2024-01-20",
+    "amount": 135.34,
+    "category": "ROZRYWKA",
+    "description": "Bowling"
+  },
+  {
+    "id": 37,
+    "date": "2024-01-20",
+    "amount": 73.78,
+    "category": "ZAKUPY",
+    "description": "Allegro"
+  },
+  {
+    "id": 38,
+    "date": "2024-01-21",
+    "amount": 39.43,
+    "category": "TRANSPORT",
+    "description": "Autopay autostrada"
+  },
+  {
+    "id": 39,
+    "date": "2024-01-22",
+    "amount": 38.71,
+    "category": "TRANSPORT",
+    "description": "Shell paliwo"
+  },
+  {
+    "id": 40,
+    "date": "2024-01-22",
+    "amount": 106.75,
+    "category": "ROZRYWKA",
+    "description": "Bowling"
+  },
+  {
+    "id": 41,
+    "date": "2024-01-23",
+    "amount": 142.21,
+    "category": "ROZRYWKA",
+    "description": "Spotify"
+  },
+  {
+    "id": 42,
+    "date": "2024-01-23",
+    "amount": 149.31,
+    "category": "ZAKUPY",
+    "description": "Allegro"
+  },
+  {
+    "id": 43,
+    "date": "2024-01-24",
+    "amount": 90.58,
+    "category": "JEDZENIE",
+    "description": "Kaufland"
+  },
+  {
+    "id": 44,
+    "date": "2024-01-24",
+    "amount": 2.31,
+    "category": "TRANSPORT",
+    "description": "Shell paliwo"
+  },
+  {
+    "id": 45,
+    "date": "2024-01-24",
+    "amount": 75.51,
+    "category": "ROZRYWKA",
+    "description": "Pub Złoty Kielich"
+  },
+  {
+    "id": 46,
+    "date": "2024-01-25",
+    "amount": 28.08,
+    "category": "JEDZENIE",
+    "description": "KFC"
+  },
+  {
+    "id": 47,
+    "date": "2024-01-25",
+    "amount": 17.79,
+    "category": "TRANSPORT",
+    "description": "BlaBlacar"
+  },
+  {
+    "id": 48,
+    "date": "2024-01-25",
+    "amount": 351.58,
+    "category": "ZAKUPY",
+    "description": "Allegro"
+  },
+  {
+    "id": 49,
+    "date": "2024-01-26",
+    "amount": 63.8,
+    "category": "JEDZENIE",
+    "description": "Sushi Bar"
+  },
+  {
+    "id": 50,
+    "date": "2024-01-26",
+    "amount": 23.08,
+    "category": "TRANSPORT",
+    "description": "Bolt"
+  },
+  {
+    "id": 51,
+    "date": "2024-01-26",
+    "amount": 138.58,
+    "category": "ROZRYWKA",
+    "description": "Pub Złoty Kielich"
+  },
+  {
+    "id": 52,
+    "date": "2024-01-27",
+    "amount": 75.6,
+    "category": "JEDZENIE",
+    "description": "Piekarnia"
+  },
+  {
+    "id": 53,
+    "date": "2024-01-27",
+    "amount": 18.73,
+    "category": "TRANSPORT",
+    "description": "BP paliwo"
+  },
+  {
+    "id": 54,
+    "date": "2024-01-28",
+    "amount": 28.05,
+    "category": "JEDZENIE",
+    "description": "Warzywnik"
+  },
+  {
+    "id": 55,
+    "date": "2024-01-28",
+    "amount": 75.48,
+    "category": "ZAKUPY",
+    "description": "Zara"
+  },
+  {
+    "id": 56,
+    "date": "2024-01-29",
+    "amount": 32.81,
+    "category": "JEDZENIE",
+    "description": "Żabka"
+  },
+  {
+    "id": 57,
+    "date": "2024-01-29",
+    "amount": 57.34,
+    "category": "ROZRYWKA",
+    "description": "Helios"
+  },
+  {
+    "id": 58,
+    "date": "2024-01-30",
+    "amount": 62.67,
+    "category": "JEDZENIE",
+    "description": "Piekarnia"
+  },
+  {
+    "id": 59,
+    "date": "2024-01-31",
+    "amount": 41.67,
+    "category": "TRANSPORT",
+    "description": "MPK bilet miesięczny"
+  },
+  {
+    "id": 60,
+    "date": "2024-01-31",
+    "amount": 106.54,
+    "category": "ZAKUPY",
+    "description": "RTV Euro AGD"
+  },
+  {
+    "id": 61,
+    "date": "2024-02-01",
+    "amount": 41.99,
+    "category": "JEDZENIE",
+    "description": "KFC"
+  },
+  {
+    "id": 62,
+    "date": "2024-02-01",
+    "amount": 21.44,
+    "category": "TRANSPORT",
+    "description": "PKP Intercity"
+  },
+  {
+    "id": 63,
+    "date": "2024-02-01",
+    "amount": 43.45,
+    "category": "ROZRYWKA",
+    "description": "Netflix"
+  },
+  {
+    "id": 64,
+    "date": "2024-02-02",
+    "amount": 64.3,
+    "category": "JEDZENIE",
+    "description": "KFC"
+  },
+  {
+    "id": 65,
+    "date": "2024-02-02",
+    "amount": 475.55,
+    "category": "RACHUNKI",
+    "description": "Woda MPWiK"
+  },
+  {
+    "id": 66,
+    "date": "2024-02-03",
+    "amount": 78.59,
+    "category": "JEDZENIE",
+    "description": "Kaufland"
+  },
+  {
+    "id": 67,
+    "date": "2024-02-03",
+    "amount": 10.63,
+    "category": "ROZRYWKA",
+    "description": "Netflix"
+  },
+  {
+    "id": 68,
+    "date": "2024-02-04",
+    "amount": 98.7,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 69,
+    "date": "2024-02-05",
+    "amount": 78.43,
+    "category": "JEDZENIE",
+    "description": "Kaufland"
+  },
+  {
+    "id": 70,
+    "date": "2024-02-05",
+    "amount": 133.18,
+    "category": "ROZRYWKA",
+    "description": "HBO Max"
+  },
+  {
+    "id": 71,
+    "date": "2024-02-06",
+    "amount": 53.23,
+    "category": "JEDZENIE",
+    "description": "Kaufland"
+  },
+  {
+    "id": 72,
+    "date": "2024-02-06",
+    "amount": 41.92,
+    "category": "ROZRYWKA",
+    "description": "Netflix"
+  },
+  {
+    "id": 73,
+    "date": "2024-02-07",
+    "amount": 39.87,
+    "category": "JEDZENIE",
+    "description": "Żabka"
+  },
+  {
+    "id": 74,
+    "date": "2024-02-07",
+    "amount": 62.12,
+    "category": "TRANSPORT",
+    "description": "Autopay autostrada"
+  },
+  {
+    "id": 75,
+    "date": "2024-02-07",
+    "amount": 34.25,
+    "category": "ROZRYWKA",
+    "description": "Steam"
+  },
+  {
+    "id": 76,
+    "date": "2024-02-08",
+    "amount": 63.69,
+    "category": "TRANSPORT",
+    "description": "PKP Intercity"
+  },
+  {
+    "id": 77,
+    "date": "2024-02-08",
+    "amount": 96.66,
+    "category": "ROZRYWKA",
+    "description": "Steam"
+  },
+  {
+    "id": 78,
+    "date": "2024-02-09",
+    "amount": 140.72,
+    "category": "ZAKUPY",
+    "description": "H&M"
+  },
+  {
+    "id": 79,
+    "date": "2024-02-10",
+    "amount": 111.98,
+    "category": "JEDZENIE",
+    "description": "Sushi Bar"
+  },
+  {
+    "id": 80,
+    "date": "2024-02-12",
+    "amount": 55.61,
+    "category": "JEDZENIE",
+    "description": "Warzywnik"
+  },
+  {
+    "id": 81,
+    "date": "2024-02-12",
+    "amount": 19.64,
+    "category": "TRANSPORT",
+    "description": "Bolt"
+  },
+  {
+    "id": 82,
+    "date": "2024-02-12",
+    "amount": 91.27,
+    "category": "ROZRYWKA",
+    "description": "Teatr Miejski"
+  },
+  {
+    "id": 83,
+    "date": "2024-02-13",
+    "amount": 45.09,
+    "category": "JEDZENIE",
+    "description": "Biedronka"
+  },
+  {
+    "id": 84,
+    "date": "2024-02-13",
+    "amount": 53.5,
+    "category": "TRANSPORT",
+    "description": "Uber"
+  },
+  {
+    "id": 85,
+    "date": "2024-02-14",
+    "amount": 61.4,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 642,
+    "date": "2024-02-14",
+    "amount": 650.0,
+    "category": "ROZRYWKA",
+    "description": "Kolacja walentynkowa – restauracja premium"
+  },
+  {
+    "id": 86,
+    "date": "2024-02-15",
+    "amount": 82.57,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 87,
+    "date": "2024-02-15",
+    "amount": 19.88,
+    "category": "TRANSPORT",
+    "description": "Bolt"
+  },
+  {
+    "id": 88,
+    "date": "2024-02-15",
+    "amount": 139.34,
+    "category": "ROZRYWKA",
+    "description": "Helios"
+  },
+  {
+    "id": 89,
+    "date": "2024-02-16",
+    "amount": 79.71,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 90,
+    "date": "2024-02-16",
+    "amount": 81.29,
+    "category": "ZAKUPY",
+    "description": "Zara"
+  },
+  {
+    "id": 91,
+    "date": "2024-02-17",
+    "amount": 41.23,
+    "category": "TRANSPORT",
+    "description": "Parking centrum"
+  },
+  {
+    "id": 92,
+    "date": "2024-02-17",
+    "amount": 13.81,
+    "category": "ROZRYWKA",
+    "description": "Helios"
+  },
+  {
+    "id": 93,
+    "date": "2024-02-17",
+    "amount": 53.96,
+    "category": "ZAKUPY",
+    "description": "Amazon"
+  },
+  {
+    "id": 94,
+    "date": "2024-02-18",
+    "amount": 61.78,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 95,
+    "date": "2024-02-19",
+    "amount": 87.94,
+    "category": "JEDZENIE",
+    "description": "KFC"
+  },
+  {
+    "id": 96,
+    "date": "2024-02-20",
+    "amount": 30.17,
+    "category": "JEDZENIE",
+    "description": "Żabka"
+  },
+  {
+    "id": 97,
+    "date": "2024-02-20",
+    "amount": 45.02,
+    "category": "TRANSPORT",
+    "description": "Orlen paliwo"
+  },
+  {
+    "id": 98,
+    "date": "2024-02-20",
+    "amount": 180.7,
+    "category": "ZAKUPY",
+    "description": "Empik"
+  },
+  {
+    "id": 99,
+    "date": "2024-02-21",
+    "amount": 52.54,
+    "category": "JEDZENIE",
+    "description": "McDonald's"
+  },
+  {
+    "id": 100,
+    "date": "2024-02-21",
+    "amount": 25.65,
+    "category": "TRANSPORT",
+    "description": "Parking centrum"
+  },
+  {
+    "id": 101,
+    "date": "2024-02-22",
+    "amount": 38.46,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 102,
+    "date": "2024-02-24",
+    "amount": 8.58,
+    "category": "JEDZENIE",
+    "description": "Carrefour"
+  },
+  {
+    "id": 103,
+    "date": "2024-02-24",
+    "amount": 40.93,
+    "category": "ROZRYWKA",
+    "description": "Pub Złoty Kielich"
+  },
+  {
+    "id": 104,
+    "date": "2024-02-25",
+    "amount": 253.39,
+    "category": "ZAKUPY",
+    "description": "Empik"
+  },
+  {
+    "id": 105,
+    "date": "2024-02-26",
+    "amount": 47.2,
+    "category": "JEDZENIE",
+    "description": "McDonald's"
+  },
+  {
+    "id": 106,
+    "date": "2024-02-26",
+    "amount": 33.35,
+    "category": "TRANSPORT",
+    "description": "Parking centrum"
+  },
+  {
+    "id": 107,
+    "date": "2024-02-27",
+    "amount": 35.07,
+    "category": "TRANSPORT",
+    "description": "Flixbus"
+  },
+  {
+    "id": 108,
+    "date": "2024-02-27",
+    "amount": 75.9,
+    "category": "ROZRYWKA",
+    "description": "PlayStation Store"
+  },
+  {
+    "id": 109,
+    "date": "2024-02-27",
+    "amount": 139.35,
+    "category": "ZDROWIE",
+    "description": "Apteka Dbam o Zdrowie"
+  },
+  {
+    "id": 110,
+    "date": "2024-02-28",
+    "amount": 53.1,
+    "category": "JEDZENIE",
+    "description": "Biedronka"
+  },
+  {
+    "id": 111,
+    "date": "2024-02-28",
+    "amount": 52.56,
+    "category": "ROZRYWKA",
+    "description": "Helios"
+  },
+  {
+    "id": 112,
+    "date": "2024-02-29",
+    "amount": 57.04,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 113,
+    "date": "2024-03-01",
+    "amount": 23.8,
+    "category": "ZAKUPY",
+    "description": "CCC buty"
+  },
+  {
+    "id": 114,
+    "date": "2024-03-02",
+    "amount": 29.24,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 115,
+    "date": "2024-03-02",
+    "amount": 20.17,
+    "category": "TRANSPORT",
+    "description": "BlaBlacar"
+  },
+  {
+    "id": 116,
+    "date": "2024-03-03",
+    "amount": 13.56,
+    "category": "JEDZENIE",
+    "description": "Restauracja Stara Kamienica"
+  },
+  {
+    "id": 117,
+    "date": "2024-03-03",
+    "amount": 14.94,
+    "category": "TRANSPORT",
+    "description": "Shell paliwo"
+  },
+  {
+    "id": 118,
+    "date": "2024-03-04",
+    "amount": 68.97,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 119,
+    "date": "2024-03-05",
+    "amount": 70.35,
+    "category": "JEDZENIE",
+    "description": "Restauracja Stara Kamienica"
+  },
+  {
+    "id": 120,
+    "date": "2024-03-06",
+    "amount": 25.22,
+    "category": "JEDZENIE",
+    "description": "Piekarnia"
+  },
+  {
+    "id": 121,
+    "date": "2024-03-07",
+    "amount": 53.94,
+    "category": "JEDZENIE",
+    "description": "Piekarnia"
+  },
+  {
+    "id": 122,
+    "date": "2024-03-07",
+    "amount": 112.35,
+    "category": "ROZRYWKA",
+    "description": "Netflix"
+  },
+  {
+    "id": 123,
+    "date": "2024-03-08",
+    "amount": 37.57,
+    "category": "JEDZENIE",
+    "description": "KFC"
+  },
+  {
+    "id": 124,
+    "date": "2024-03-09",
+    "amount": 48.7,
+    "category": "JEDZENIE",
+    "description": "Carrefour"
+  },
+  {
+    "id": 125,
+    "date": "2024-03-10",
+    "amount": 38.59,
+    "category": "JEDZENIE",
+    "description": "Carrefour"
+  },
+  {
+    "id": 126,
+    "date": "2024-03-10",
+    "amount": 49.13,
+    "category": "TRANSPORT",
+    "description": "MPK bilet miesięczny"
+  },
+  {
+    "id": 127,
+    "date": "2024-03-11",
+    "amount": 69.71,
+    "category": "JEDZENIE",
+    "description": "Carrefour"
+  },
+  {
+    "id": 128,
+    "date": "2024-03-11",
+    "amount": 272.31,
+    "category": "ZAKUPY",
+    "description": "CCC buty"
+  },
+  {
+    "id": 129,
+    "date": "2024-03-12",
+    "amount": 41.39,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 130,
+    "date": "2024-03-12",
+    "amount": 106.03,
+    "category": "ROZRYWKA",
+    "description": "Netflix"
+  },
+  {
+    "id": 131,
+    "date": "2024-03-12",
+    "amount": 212.97,
+    "category": "ZAKUPY",
+    "description": "H&M"
+  },
+  {
+    "id": 132,
+    "date": "2024-03-13",
+    "amount": 33.63,
+    "category": "JEDZENIE",
+    "description": "KFC"
+  },
+  {
+    "id": 133,
+    "date": "2024-03-14",
+    "amount": 81.67,
+    "category": "JEDZENIE",
+    "description": "Piekarnia"
+  },
+  {
+    "id": 134,
+    "date": "2024-03-14",
+    "amount": 98.57,
+    "category": "ROZRYWKA",
+    "description": "Cinema City"
+  },
+  {
+    "id": 135,
+    "date": "2024-03-14",
+    "amount": 151.16,
+    "category": "ZAKUPY",
+    "description": "Empik"
+  },
+  {
+    "id": 136,
+    "date": "2024-03-15",
+    "amount": 86.95,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 137,
+    "date": "2024-03-16",
+    "amount": 25.77,
+    "category": "JEDZENIE",
+    "description": "Biedronka"
+  },
+  {
+    "id": 138,
+    "date": "2024-03-16",
+    "amount": 194.86,
+    "category": "ZAKUPY",
+    "description": "Castorama"
+  },
+  {
+    "id": 139,
+    "date": "2024-03-17",
+    "amount": 57.02,
+    "category": "JEDZENIE",
+    "description": "Kaufland"
+  },
+  {
+    "id": 140,
+    "date": "2024-03-17",
+    "amount": 56.01,
+    "category": "TRANSPORT",
+    "description": "Parking centrum"
+  },
+  {
+    "id": 141,
+    "date": "2024-03-17",
+    "amount": 106.47,
+    "category": "ZDROWIE",
+    "description": "Multisport"
+  },
+  {
+    "id": 142,
+    "date": "2024-03-17",
+    "amount": 213.36,
+    "category": "ZAKUPY",
+    "description": "CCC buty"
+  },
+  {
+    "id": 143,
+    "date": "2024-03-19",
+    "amount": 22.22,
+    "category": "JEDZENIE",
+    "description": "Burger King"
+  },
+  {
+    "id": 144,
+    "date": "2024-03-19",
+    "amount": 1.76,
+    "category": "TRANSPORT",
+    "description": "PKP Intercity"
+  },
+  {
+    "id": 145,
+    "date": "2024-03-19",
+    "amount": 56.45,
+    "category": "ROZRYWKA",
+    "description": "Koncert"
+  },
+  {
+    "id": 146,
+    "date": "2024-03-20",
+    "amount": 93.87,
+    "category": "JEDZENIE",
+    "description": "McDonald's"
+  },
+  {
+    "id": 147,
+    "date": "2024-03-20",
+    "amount": 85.77,
+    "category": "ZAKUPY",
+    "description": "MediaMarkt"
+  },
+  {
+    "id": 148,
+    "date": "2024-03-21",
+    "amount": 64.13,
+    "category": "JEDZENIE",
+    "description": "Żabka"
+  },
+  {
+    "id": 149,
+    "date": "2024-03-22",
+    "amount": 54.12,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 150,
+    "date": "2024-03-22",
+    "amount": 38.37,
+    "category": "TRANSPORT",
+    "description": "Flixbus"
+  },
+  {
+    "id": 643,
+    "date": "2024-03-22",
+    "amount": 890.5,
+    "category": "ZDROWIE",
+    "description": "Ortodonta – aparat na zęby"
+  },
+  {
+    "id": 151,
+    "date": "2024-03-23",
+    "amount": 44.08,
+    "category": "JEDZENIE",
+    "description": "Restauracja Stara Kamienica"
+  },
+  {
+    "id": 152,
+    "date": "2024-03-23",
+    "amount": 33.66,
+    "category": "TRANSPORT",
+    "description": "BP paliwo"
+  },
+  {
+    "id": 153,
+    "date": "2024-03-24",
+    "amount": 98.13,
+    "category": "JEDZENIE",
+    "description": "Sushi Bar"
+  },
+  {
+    "id": 154,
+    "date": "2024-03-24",
+    "amount": 22.11,
+    "category": "TRANSPORT",
+    "description": "MPK bilet miesięczny"
+  },
+  {
+    "id": 155,
+    "date": "2024-03-25",
+    "amount": 91.5,
+    "category": "JEDZENIE",
+    "description": "Sushi Bar"
+  },
+  {
+    "id": 156,
+    "date": "2024-03-25",
+    "amount": 75.63,
+    "category": "ROZRYWKA",
+    "description": "Kręgielnia"
+  },
+  {
+    "id": 157,
+    "date": "2024-03-26",
+    "amount": 1.0,
+    "category": "TRANSPORT",
+    "description": "Parking centrum"
+  },
+  {
+    "id": 158,
+    "date": "2024-03-26",
+    "amount": 71.17,
+    "category": "ZDROWIE",
+    "description": "Dentysta"
+  },
+  {
+    "id": 159,
+    "date": "2024-03-27",
+    "amount": 80.5,
+    "category": "JEDZENIE",
+    "description": "Żabka"
+  },
+  {
+    "id": 160,
+    "date": "2024-03-28",
+    "amount": 57.2,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 161,
+    "date": "2024-03-28",
+    "amount": 28.09,
+    "category": "TRANSPORT",
+    "description": "Parking centrum"
+  },
+  {
+    "id": 162,
+    "date": "2024-03-30",
+    "amount": 30.1,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 163,
+    "date": "2024-03-31",
+    "amount": 44.27,
+    "category": "ROZRYWKA",
+    "description": "Kręgielnia"
+  },
+  {
+    "id": 164,
+    "date": "2024-04-01",
+    "amount": 79.17,
+    "category": "ROZRYWKA",
+    "description": "Pub Złoty Kielich"
+  },
+  {
+    "id": 165,
+    "date": "2024-04-01",
+    "amount": 145.84,
+    "category": "ZAKUPY",
+    "description": "Empik"
+  },
+  {
+    "id": 166,
+    "date": "2024-04-02",
+    "amount": 15.95,
+    "category": "JEDZENIE",
+    "description": "Warzywnik"
+  },
+  {
+    "id": 167,
+    "date": "2024-04-02",
+    "amount": 220.17,
+    "category": "ZAKUPY",
+    "description": "Zara"
+  },
+  {
+    "id": 168,
+    "date": "2024-04-04",
+    "amount": 50.15,
+    "category": "JEDZENIE",
+    "description": "Kaufland"
+  },
+  {
+    "id": 169,
+    "date": "2024-04-04",
+    "amount": 37.78,
+    "category": "TRANSPORT",
+    "description": "BlaBlacar"
+  },
+  {
+    "id": 170,
+    "date": "2024-04-05",
+    "amount": 21.15,
+    "category": "TRANSPORT",
+    "description": "BP paliwo"
+  },
+  {
+    "id": 171,
+    "date": "2024-04-06",
+    "amount": 58.63,
+    "category": "JEDZENIE",
+    "description": "Carrefour"
+  },
+  {
+    "id": 172,
+    "date": "2024-04-07",
+    "amount": 225.83,
+    "category": "ZDROWIE",
+    "description": "Apteka Dbam o Zdrowie"
+  },
+  {
+    "id": 173,
+    "date": "2024-04-08",
+    "amount": 73.77,
+    "category": "JEDZENIE",
+    "description": "Piekarnia"
+  },
+  {
+    "id": 174,
+    "date": "2024-04-08",
+    "amount": 127.01,
+    "category": "ROZRYWKA",
+    "description": "Cinema City"
+  },
+  {
+    "id": 175,
+    "date": "2024-04-09",
+    "amount": 66.86,
+    "category": "JEDZENIE",
+    "description": "KFC"
+  },
+  {
+    "id": 176,
+    "date": "2024-04-10",
+    "amount": 47.76,
+    "category": "JEDZENIE",
+    "description": "Sushi Bar"
+  },
+  {
+    "id": 177,
+    "date": "2024-04-10",
+    "amount": 19.52,
+    "category": "TRANSPORT",
+    "description": "BlaBlacar"
+  },
+  {
+    "id": 178,
+    "date": "2024-04-11",
+    "amount": 63.24,
+    "category": "JEDZENIE",
+    "description": "McDonald's"
+  },
+  {
+    "id": 179,
+    "date": "2024-04-11",
+    "amount": 60.28,
+    "category": "ROZRYWKA",
+    "description": "Steam"
+  },
+  {
+    "id": 180,
+    "date": "2024-04-12",
+    "amount": 70.99,
+    "category": "JEDZENIE",
+    "description": "Carrefour"
+  },
+  {
+    "id": 181,
+    "date": "2024-04-12",
+    "amount": 55.67,
+    "category": "TRANSPORT",
+    "description": "PKP Intercity"
+  },
+  {
+    "id": 182,
+    "date": "2024-04-13",
+    "amount": 11.57,
+    "category": "TRANSPORT",
+    "description": "BP paliwo"
+  },
+  {
+    "id": 183,
+    "date": "2024-04-13",
+    "amount": 99.16,
+    "category": "ROZRYWKA",
+    "description": "HBO Max"
+  },
+  {
+    "id": 184,
+    "date": "2024-04-13",
+    "amount": 206.52,
+    "category": "ZAKUPY",
+    "description": "Zara"
+  },
+  {
+    "id": 185,
+    "date": "2024-04-15",
+    "amount": 43.4,
+    "category": "JEDZENIE",
+    "description": "Kaufland"
+  },
+  {
+    "id": 186,
+    "date": "2024-04-15",
+    "amount": 63.67,
+    "category": "TRANSPORT",
+    "description": "Flixbus"
+  },
+  {
+    "id": 187,
+    "date": "2024-04-16",
+    "amount": 106.51,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 188,
+    "date": "2024-04-16",
+    "amount": 12.77,
+    "category": "TRANSPORT",
+    "description": "BP paliwo"
+  },
+  {
+    "id": 189,
+    "date": "2024-04-17",
+    "amount": 38.28,
+    "category": "JEDZENIE",
+    "description": "McDonald's"
+  },
+  {
+    "id": 190,
+    "date": "2024-04-17",
+    "amount": 42.77,
+    "category": "ZAKUPY",
+    "description": "Amazon"
+  },
+  {
+    "id": 191,
+    "date": "2024-04-18",
+    "amount": 26.81,
+    "category": "JEDZENIE",
+    "description": "Carrefour"
+  },
+  {
+    "id": 192,
+    "date": "2024-04-19",
+    "amount": 85.55,
+    "category": "JEDZENIE",
+    "description": "Sushi Bar"
+  },
+  {
+    "id": 193,
+    "date": "2024-04-19",
+    "amount": 14.98,
+    "category": "TRANSPORT",
+    "description": "Autopay autostrada"
+  },
+  {
+    "id": 194,
+    "date": "2024-04-20",
+    "amount": 31.97,
+    "category": "JEDZENIE",
+    "description": "Biedronka"
+  },
+  {
+    "id": 195,
+    "date": "2024-04-20",
+    "amount": 26.87,
+    "category": "TRANSPORT",
+    "description": "Flixbus"
+  },
+  {
+    "id": 196,
+    "date": "2024-04-20",
+    "amount": 88.84,
+    "category": "ROZRYWKA",
+    "description": "Bowling"
+  },
+  {
+    "id": 197,
+    "date": "2024-04-21",
+    "amount": 20.65,
+    "category": "JEDZENIE",
+    "description": "McDonald's"
+  },
+  {
+    "id": 198,
+    "date": "2024-04-22",
+    "amount": 34.0,
+    "category": "JEDZENIE",
+    "description": "Żabka"
+  },
+  {
+    "id": 199,
+    "date": "2024-04-23",
+    "amount": 78.34,
+    "category": "JEDZENIE",
+    "description": "McDonald's"
+  },
+  {
+    "id": 200,
+    "date": "2024-04-23",
+    "amount": 32.65,
+    "category": "TRANSPORT",
+    "description": "MPK bilet miesięczny"
+  },
+  {
+    "id": 201,
+    "date": "2024-04-23",
+    "amount": 13.72,
+    "category": "ZAKUPY",
+    "description": "H&M"
+  },
+  {
+    "id": 202,
+    "date": "2024-04-24",
+    "amount": 1.0,
+    "category": "TRANSPORT",
+    "description": "Bolt"
+  },
+  {
+    "id": 203,
+    "date": "2024-04-25",
+    "amount": 62.03,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 204,
+    "date": "2024-04-25",
+    "amount": 22.9,
+    "category": "TRANSPORT",
+    "description": "BlaBlacar"
+  },
+  {
+    "id": 205,
+    "date": "2024-04-25",
+    "amount": 102.08,
+    "category": "ROZRYWKA",
+    "description": "Cinema City"
+  },
+  {
+    "id": 206,
+    "date": "2024-04-25",
+    "amount": 115.25,
+    "category": "ZAKUPY",
+    "description": "H&M"
+  },
+  {
+    "id": 207,
+    "date": "2024-04-26",
+    "amount": 27.29,
+    "category": "JEDZENIE",
+    "description": "Piekarnia"
+  },
+  {
+    "id": 208,
+    "date": "2024-04-26",
+    "amount": 59.67,
+    "category": "TRANSPORT",
+    "description": "Bolt"
+  },
+  {
+    "id": 209,
+    "date": "2024-04-26",
+    "amount": 117.24,
+    "category": "ROZRYWKA",
+    "description": "Spotify"
+  },
+  {
+    "id": 210,
+    "date": "2024-04-27",
+    "amount": 73.68,
+    "category": "JEDZENIE",
+    "description": "Lidl"
+  },
+  {
+    "id": 211,
+    "date": "2024-04-27",
+    "amount": 39.66,
+    "category": "ROZRYWKA",
+    "description": "Teatr Miejski"
+  },
+  {
+    "id": 212,
+    "date": "2024-04-28",
+    "amount": 28.33,
+    "category": "JEDZENIE",
+    "description": "KFC"
+  },
+  {
+    "id": 213,
+    "date": "2024-04-29",
+    "amount": 40.57,
+    "category": "TRANSPORT",
+    "description": "BlaBlacar"
+  },
+  {
+    "id": 214,
+    "date": "2024-04-30",
+    "amount": 65.42,
+    "category": "JEDZENIE",
+    "description": "KFC"
+  },
+  {
+    "id": 215,
+    "date": "2024-05-02",
+    "amount": 34.76,
+    "category": "TRANSPORT",
+    "description": "BP paliwo"
+  },
+  {
+    "id": 216,
+    "date": "2024-05-03",
+    "amount": 33.53,
+    "category": "JEDZENIE",
+    "description": "Burger King"
+  },
+  {
+    "id": 217,
+    "date": "2024-05-03",
+    "amount": 9.69,
+    "category": "TRANSPORT",
+    "description": "BP paliwo"
+  },
+  {
+    "id": 218,
+    "date": "2024-05-04",
+    "amount": 72.14,
+    "category": "JEDZENIE",
+    "description": "Lidl"
+  },
+  {
+    "id": 219,
+    "date": "2024-05-04",
+    "amount": 66.78,
+    "category": "TRANSPORT",
+    "description": "Shell paliwo"
+  },
+  {
+    "id": 220,
+    "date": "2024-05-05",
+    "amount": 12.56,
+    "category": "JEDZENIE",
+    "description": "Piekarnia"
+  },
+  {
+    "id": 221,
+    "date": "2024-05-05",
+    "amount": 16.8,
+    "category": "ROZRYWKA",
+    "description": "PlayStation Store"
+  },
+  {
+    "id": 222,
+    "date": "2024-05-06",
+    "amount": 60.41,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 223,
+    "date": "2024-05-07",
+    "amount": 26.64,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 224,
+    "date": "2024-05-07",
+    "amount": 20.07,
+    "category": "TRANSPORT",
+    "description": "Bolt"
+  },
+  {
+    "id": 225,
+    "date": "2024-05-07",
+    "amount": 100.89,
+    "category": "ROZRYWKA",
+    "description": "PlayStation Store"
+  },
+  {
+    "id": 226,
+    "date": "2024-05-07",
+    "amount": 96.04,
+    "category": "RACHUNKI",
+    "description": "Woda MPWiK"
+  },
+  {
+    "id": 227,
+    "date": "2024-05-08",
+    "amount": 50.82,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 228,
+    "date": "2024-05-09",
+    "amount": 50.37,
+    "category": "JEDZENIE",
+    "description": "Piekarnia"
+  },
+  {
+    "id": 229,
+    "date": "2024-05-09",
+    "amount": 225.44,
+    "category": "ZAKUPY",
+    "description": "Empik"
+  },
+  {
+    "id": 230,
+    "date": "2024-05-10",
+    "amount": 68.27,
+    "category": "JEDZENIE",
+    "description": "KFC"
+  },
+  {
+    "id": 231,
+    "date": "2024-05-10",
+    "amount": 41.38,
+    "category": "TRANSPORT",
+    "description": "BP paliwo"
+  },
+  {
+    "id": 644,
+    "date": "2024-05-10",
+    "amount": 1240.0,
+    "category": "ZAKUPY",
+    "description": "Smartwatch Samsung Galaxy Watch"
+  },
+  {
+    "id": 232,
+    "date": "2024-05-11",
+    "amount": 84.26,
+    "category": "JEDZENIE",
+    "description": "Biedronka"
+  },
+  {
+    "id": 233,
+    "date": "2024-05-11",
+    "amount": 42.76,
+    "category": "TRANSPORT",
+    "description": "Uber"
+  },
+  {
+    "id": 234,
+    "date": "2024-05-12",
+    "amount": 54.18,
+    "category": "JEDZENIE",
+    "description": "Biedronka"
+  },
+  {
+    "id": 235,
+    "date": "2024-05-13",
+    "amount": 43.49,
+    "category": "JEDZENIE",
+    "description": "McDonald's"
+  },
+  {
+    "id": 236,
+    "date": "2024-05-13",
+    "amount": 61.3,
+    "category": "ROZRYWKA",
+    "description": "Netflix"
+  },
+  {
+    "id": 237,
+    "date": "2024-05-14",
+    "amount": 25.51,
+    "category": "JEDZENIE",
+    "description": "Carrefour"
+  },
+  {
+    "id": 238,
+    "date": "2024-05-14",
+    "amount": 51.29,
+    "category": "TRANSPORT",
+    "description": "PKP Intercity"
+  },
+  {
+    "id": 239,
+    "date": "2024-05-15",
+    "amount": 37.69,
+    "category": "JEDZENIE",
+    "description": "Lidl"
+  },
+  {
+    "id": 240,
+    "date": "2024-05-15",
+    "amount": 51.47,
+    "category": "TRANSPORT",
+    "description": "BlaBlacar"
+  },
+  {
+    "id": 241,
+    "date": "2024-05-16",
+    "amount": 56.81,
+    "category": "JEDZENIE",
+    "description": "Warzywnik"
+  },
+  {
+    "id": 242,
+    "date": "2024-05-16",
+    "amount": 29.69,
+    "category": "TRANSPORT",
+    "description": "Flixbus"
+  },
+  {
+    "id": 243,
+    "date": "2024-05-16",
+    "amount": 99.96,
+    "category": "ROZRYWKA",
+    "description": "Teatr Miejski"
+  },
+  {
+    "id": 244,
+    "date": "2024-05-16",
+    "amount": 76.61,
+    "category": "ZAKUPY",
+    "description": "CCC buty"
+  },
+  {
+    "id": 245,
+    "date": "2024-05-17",
+    "amount": 79.18,
+    "category": "JEDZENIE",
+    "description": "Lidl"
+  },
+  {
+    "id": 246,
+    "date": "2024-05-17",
+    "amount": 61.64,
+    "category": "TRANSPORT",
+    "description": "Autopay autostrada"
+  },
+  {
+    "id": 247,
+    "date": "2024-05-19",
+    "amount": 79.56,
+    "category": "JEDZENIE",
+    "description": "Carrefour"
+  },
+  {
+    "id": 248,
+    "date": "2024-05-20",
+    "amount": 66.24,
+    "category": "JEDZENIE",
+    "description": "Restauracja Stara Kamienica"
+  },
+  {
+    "id": 249,
+    "date": "2024-05-20",
+    "amount": 145.59,
+    "category": "ROZRYWKA",
+    "description": "Koncert"
+  },
+  {
+    "id": 250,
+    "date": "2024-05-21",
+    "amount": 34.62,
+    "category": "ROZRYWKA",
+    "description": "Koncert"
+  },
+  {
+    "id": 251,
+    "date": "2024-05-22",
+    "amount": 65.81,
+    "category": "JEDZENIE",
+    "description": "Burger King"
+  },
+  {
+    "id": 252,
+    "date": "2024-05-22",
+    "amount": 39.94,
+    "category": "TRANSPORT",
+    "description": "MPK bilet miesięczny"
+  },
+  {
+    "id": 253,
+    "date": "2024-05-23",
+    "amount": 40.45,
+    "category": "JEDZENIE",
+    "description": "Restauracja Stara Kamienica"
+  },
+  {
+    "id": 254,
+    "date": "2024-05-23",
+    "amount": 143.3,
+    "category": "ZAKUPY",
+    "description": "Castorama"
+  },
+  {
+    "id": 255,
+    "date": "2024-05-24",
+    "amount": 65.2,
+    "category": "JEDZENIE",
+    "description": "Warzywnik"
+  },
+  {
+    "id": 256,
+    "date": "2024-05-24",
+    "amount": 39.98,
+    "category": "TRANSPORT",
+    "description": "Orlen paliwo"
+  },
+  {
+    "id": 257,
+    "date": "2024-05-25",
+    "amount": 43.02,
+    "category": "JEDZENIE",
+    "description": "Restauracja Stara Kamienica"
+  },
+  {
+    "id": 258,
+    "date": "2024-05-25",
+    "amount": 31.81,
+    "category": "TRANSPORT",
+    "description": "Autopay autostrada"
+  },
+  {
+    "id": 259,
+    "date": "2024-05-26",
+    "amount": 23.36,
+    "category": "JEDZENIE",
+    "description": "Burger King"
+  },
+  {
+    "id": 260,
+    "date": "2024-05-26",
+    "amount": 59.05,
+    "category": "TRANSPORT",
+    "description": "Autopay autostrada"
+  },
+  {
+    "id": 261,
+    "date": "2024-05-27",
+    "amount": 32.79,
+    "category": "JEDZENIE",
+    "description": "Restauracja Stara Kamienica"
+  },
+  {
+    "id": 262,
+    "date": "2024-05-27",
+    "amount": 333.3,
+    "category": "ZAKUPY",
+    "description": "Zara"
+  },
+  {
+    "id": 263,
+    "date": "2024-05-28",
+    "amount": 15.32,
+    "category": "JEDZENIE",
+    "description": "Sushi Bar"
+  },
+  {
+    "id": 264,
+    "date": "2024-05-28",
+    "amount": 29.46,
+    "category": "TRANSPORT",
+    "description": "BP paliwo"
+  },
+  {
+    "id": 265,
+    "date": "2024-05-28",
+    "amount": 201.74,
+    "category": "ZAKUPY",
+    "description": "IKEA"
+  },
+  {
+    "id": 266,
+    "date": "2024-05-29",
+    "amount": 61.84,
+    "category": "TRANSPORT",
+    "description": "Parking centrum"
+  },
+  {
+    "id": 267,
+    "date": "2024-05-29",
+    "amount": 51.88,
+    "category": "ROZRYWKA",
+    "description": "Bowling"
+  },
+  {
+    "id": 268,
+    "date": "2024-05-30",
+    "amount": 85.02,
+    "category": "JEDZENIE",
+    "description": "Żabka"
+  },
+  {
+    "id": 269,
+    "date": "2024-05-30",
+    "amount": 44.04,
+    "category": "TRANSPORT",
+    "description": "Uber"
+  },
+  {
+    "id": 270,
+    "date": "2024-05-31",
+    "amount": 28.76,
+    "category": "JEDZENIE",
+    "description": "McDonald's"
+  },
+  {
+    "id": 271,
+    "date": "2024-06-01",
+    "amount": 20.82,
+    "category": "TRANSPORT",
+    "description": "MPK bilet miesięczny"
+  },
+  {
+    "id": 272,
+    "date": "2024-06-01",
+    "amount": 159.37,
+    "category": "ZAKUPY",
+    "description": "Reserved"
+  },
+  {
+    "id": 273,
+    "date": "2024-06-02",
+    "amount": 66.69,
+    "category": "JEDZENIE",
+    "description": "McDonald's"
+  },
+  {
+    "id": 274,
+    "date": "2024-06-02",
+    "amount": 32.33,
+    "category": "TRANSPORT",
+    "description": "Uber"
+  },
+  {
+    "id": 275,
+    "date": "2024-06-03",
+    "amount": 37.65,
+    "category": "JEDZENIE",
+    "description": "Lidl"
+  },
+  {
+    "id": 276,
+    "date": "2024-06-03",
+    "amount": 50.69,
+    "category": "TRANSPORT",
+    "description": "PKP Intercity"
+  },
+  {
+    "id": 277,
+    "date": "2024-06-04",
+    "amount": 109.22,
+    "category": "JEDZENIE",
+    "description": "KFC"
+  },
+  {
+    "id": 278,
+    "date": "2024-06-04",
+    "amount": 117.29,
+    "category": "ROZRYWKA",
+    "description": "HBO Max"
+  },
+  {
+    "id": 279,
+    "date": "2024-06-05",
+    "amount": 58.05,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 280,
+    "date": "2024-06-05",
+    "amount": 194.47,
+    "category": "ZAKUPY",
+    "description": "CCC buty"
+  },
+  {
+    "id": 281,
+    "date": "2024-06-06",
+    "amount": 62.53,
+    "category": "JEDZENIE",
+    "description": "Lidl"
+  },
+  {
+    "id": 282,
+    "date": "2024-06-07",
+    "amount": 18.89,
+    "category": "TRANSPORT",
+    "description": "PKP Intercity"
+  },
+  {
+    "id": 283,
+    "date": "2024-06-08",
+    "amount": 64.24,
+    "category": "JEDZENIE",
+    "description": "Sushi Bar"
+  },
+  {
+    "id": 284,
+    "date": "2024-06-08",
+    "amount": 115.84,
+    "category": "ZDROWIE",
+    "description": "Multisport"
+  },
+  {
+    "id": 285,
+    "date": "2024-06-08",
+    "amount": 91.39,
+    "category": "ZAKUPY",
+    "description": "Leroy Merlin"
+  },
+  {
+    "id": 286,
+    "date": "2024-06-09",
+    "amount": 70.77,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 287,
+    "date": "2024-06-09",
+    "amount": 39.5,
+    "category": "TRANSPORT",
+    "description": "MPK bilet miesięczny"
+  },
+  {
+    "id": 288,
+    "date": "2024-06-09",
+    "amount": 266.87,
+    "category": "ZAKUPY",
+    "description": "Amazon"
+  },
+  {
+    "id": 289,
+    "date": "2024-06-10",
+    "amount": 25.62,
+    "category": "JEDZENIE",
+    "description": "Warzywnik"
+  },
+  {
+    "id": 290,
+    "date": "2024-06-10",
+    "amount": 32.22,
+    "category": "ZAKUPY",
+    "description": "Allegro"
+  },
+  {
+    "id": 291,
+    "date": "2024-06-11",
+    "amount": 68.25,
+    "category": "JEDZENIE",
+    "description": "Biedronka"
+  },
+  {
+    "id": 292,
+    "date": "2024-06-11",
+    "amount": 68.42,
+    "category": "TRANSPORT",
+    "description": "Orlen paliwo"
+  },
+  {
+    "id": 293,
+    "date": "2024-06-12",
+    "amount": 18.5,
+    "category": "TRANSPORT",
+    "description": "Autopay autostrada"
+  },
+  {
+    "id": 294,
+    "date": "2024-06-16",
+    "amount": 89.09,
+    "category": "JEDZENIE",
+    "description": "McDonald's"
+  },
+  {
+    "id": 295,
+    "date": "2024-06-16",
+    "amount": 19.64,
+    "category": "TRANSPORT",
+    "description": "BP paliwo"
+  },
+  {
+    "id": 296,
+    "date": "2024-06-17",
+    "amount": 64.4,
+    "category": "JEDZENIE",
+    "description": "Warzywnik"
+  },
+  {
+    "id": 297,
+    "date": "2024-06-18",
+    "amount": 20.99,
+    "category": "JEDZENIE",
+    "description": "Biedronka"
+  },
+  {
+    "id": 298,
+    "date": "2024-06-18",
+    "amount": 18.4,
+    "category": "TRANSPORT",
+    "description": "Uber"
+  },
+  {
+    "id": 299,
+    "date": "2024-06-19",
+    "amount": 28.72,
+    "category": "JEDZENIE",
+    "description": "Restauracja Stara Kamienica"
+  },
+  {
+    "id": 300,
+    "date": "2024-06-19",
+    "amount": 8.0,
+    "category": "ROZRYWKA",
+    "description": "Cinema City"
+  },
+  {
+    "id": 301,
+    "date": "2024-06-20",
+    "amount": 85.85,
+    "category": "JEDZENIE",
+    "description": "KFC"
+  },
+  {
+    "id": 302,
+    "date": "2024-06-21",
+    "amount": 81.67,
+    "category": "JEDZENIE",
+    "description": "Piekarnia"
+  },
+  {
+    "id": 303,
+    "date": "2024-06-21",
+    "amount": 56.14,
+    "category": "TRANSPORT",
+    "description": "MPK bilet miesięczny"
+  },
+  {
+    "id": 304,
+    "date": "2024-06-21",
+    "amount": 72.7,
+    "category": "ROZRYWKA",
+    "description": "Spotify"
+  },
+  {
+    "id": 305,
+    "date": "2024-06-22",
+    "amount": 34.96,
+    "category": "JEDZENIE",
+    "description": "Restauracja Stara Kamienica"
+  },
+  {
+    "id": 306,
+    "date": "2024-06-23",
+    "amount": 11.03,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 307,
+    "date": "2024-06-23",
+    "amount": 163.26,
+    "category": "ZAKUPY",
+    "description": "Allegro"
+  },
+  {
+    "id": 308,
+    "date": "2024-06-24",
+    "amount": 68.03,
+    "category": "JEDZENIE",
+    "description": "Sushi Bar"
+  },
+  {
+    "id": 309,
+    "date": "2024-06-25",
+    "amount": 23.14,
+    "category": "JEDZENIE",
+    "description": "KFC"
+  },
+  {
+    "id": 310,
+    "date": "2024-06-26",
+    "amount": 78.72,
+    "category": "JEDZENIE",
+    "description": "KFC"
+  },
+  {
+    "id": 311,
+    "date": "2024-06-27",
+    "amount": 56.47,
+    "category": "JEDZENIE",
+    "description": "Sushi Bar"
+  },
+  {
+    "id": 312,
+    "date": "2024-06-27",
+    "amount": 75.11,
+    "category": "ROZRYWKA",
+    "description": "Spotify"
+  },
+  {
+    "id": 313,
+    "date": "2024-06-27",
+    "amount": 202.45,
+    "category": "ZAKUPY",
+    "description": "Amazon"
+  },
+  {
+    "id": 314,
+    "date": "2024-06-28",
+    "amount": 84.6,
+    "category": "ROZRYWKA",
+    "description": "Teatr Miejski"
+  },
+  {
+    "id": 645,
+    "date": "2024-06-28",
+    "amount": 980.0,
+    "category": "TRANSPORT",
+    "description": "Wynajem auta wakacje – Hertz"
+  },
+  {
+    "id": 315,
+    "date": "2024-06-29",
+    "amount": 84.79,
+    "category": "JEDZENIE",
+    "description": "Piekarnia"
+  },
+  {
+    "id": 316,
+    "date": "2024-06-29",
+    "amount": 127.71,
+    "category": "ROZRYWKA",
+    "description": "Teatr Miejski"
+  },
+  {
+    "id": 317,
+    "date": "2024-06-30",
+    "amount": 42.89,
+    "category": "TRANSPORT",
+    "description": "Autopay autostrada"
+  },
+  {
+    "id": 318,
+    "date": "2024-07-01",
+    "amount": 47.23,
+    "category": "JEDZENIE",
+    "description": "Biedronka"
+  },
+  {
+    "id": 319,
+    "date": "2024-07-02",
+    "amount": 45.18,
+    "category": "ZDROWIE",
+    "description": "Dentysta"
+  },
+  {
+    "id": 320,
+    "date": "2024-07-03",
+    "amount": 65.66,
+    "category": "JEDZENIE",
+    "description": "Burger King"
+  },
+  {
+    "id": 321,
+    "date": "2024-07-03",
+    "amount": 79.41,
+    "category": "ZAKUPY",
+    "description": "RTV Euro AGD"
+  },
+  {
+    "id": 322,
+    "date": "2024-07-04",
+    "amount": 78.33,
+    "category": "JEDZENIE",
+    "description": "Lidl"
+  },
+  {
+    "id": 323,
+    "date": "2024-07-04",
+    "amount": 38.61,
+    "category": "TRANSPORT",
+    "description": "Orlen paliwo"
+  },
+  {
+    "id": 324,
+    "date": "2024-07-05",
+    "amount": 186.1,
+    "category": "ZAKUPY",
+    "description": "Amazon"
+  },
+  {
+    "id": 325,
+    "date": "2024-07-06",
+    "amount": 76.26,
+    "category": "JEDZENIE",
+    "description": "Lidl"
+  },
+  {
+    "id": 326,
+    "date": "2024-07-07",
+    "amount": 34.8,
+    "category": "JEDZENIE",
+    "description": "KFC"
+  },
+  {
+    "id": 327,
+    "date": "2024-07-07",
+    "amount": 183.48,
+    "category": "ZAKUPY",
+    "description": "MediaMarkt"
+  },
+  {
+    "id": 328,
+    "date": "2024-07-08",
+    "amount": 176.82,
+    "category": "ZAKUPY",
+    "description": "Amazon"
+  },
+  {
+    "id": 329,
+    "date": "2024-07-09",
+    "amount": 34.33,
+    "category": "JEDZENIE",
+    "description": "Sushi Bar"
+  },
+  {
+    "id": 330,
+    "date": "2024-07-09",
+    "amount": 51.4,
+    "category": "TRANSPORT",
+    "description": "BlaBlacar"
+  },
+  {
+    "id": 331,
+    "date": "2024-07-10",
+    "amount": 66.49,
+    "category": "TRANSPORT",
+    "description": "Uber"
+  },
+  {
+    "id": 332,
+    "date": "2024-07-10",
+    "amount": 76.06,
+    "category": "ZDROWIE",
+    "description": "Apteka Dbam o Zdrowie"
+  },
+  {
+    "id": 333,
+    "date": "2024-07-10",
+    "amount": 104.82,
+    "category": "ZAKUPY",
+    "description": "Allegro"
+  },
+  {
+    "id": 334,
+    "date": "2024-07-11",
+    "amount": 79.56,
+    "category": "JEDZENIE",
+    "description": "Sushi Bar"
+  },
+  {
+    "id": 335,
+    "date": "2024-07-11",
+    "amount": 52.82,
+    "category": "TRANSPORT",
+    "description": "Shell paliwo"
+  },
+  {
+    "id": 336,
+    "date": "2024-07-13",
+    "amount": 45.85,
+    "category": "JEDZENIE",
+    "description": "McDonald's"
+  },
+  {
+    "id": 337,
+    "date": "2024-07-13",
+    "amount": 1.0,
+    "category": "ZAKUPY",
+    "description": "IKEA"
+  },
+  {
+    "id": 338,
+    "date": "2024-07-14",
+    "amount": 65.38,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 339,
+    "date": "2024-07-14",
+    "amount": 16.73,
+    "category": "TRANSPORT",
+    "description": "BlaBlacar"
+  },
+  {
+    "id": 340,
+    "date": "2024-07-15",
+    "amount": 58.73,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 341,
+    "date": "2024-07-15",
+    "amount": 54.01,
+    "category": "TRANSPORT",
+    "description": "Bolt"
+  },
+  {
+    "id": 646,
+    "date": "2024-07-15",
+    "amount": 560.0,
+    "category": "JEDZENIE",
+    "description": "Catering firmowy – urodziny"
+  },
+  {
+    "id": 342,
+    "date": "2024-07-16",
+    "amount": 57.57,
+    "category": "JEDZENIE",
+    "description": "Burger King"
+  },
+  {
+    "id": 343,
+    "date": "2024-07-16",
+    "amount": 111.49,
+    "category": "ROZRYWKA",
+    "description": "PlayStation Store"
+  },
+  {
+    "id": 344,
+    "date": "2024-07-18",
+    "amount": 68.0,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 345,
+    "date": "2024-07-19",
+    "amount": 75.71,
+    "category": "JEDZENIE",
+    "description": "Carrefour"
+  },
+  {
+    "id": 346,
+    "date": "2024-07-21",
+    "amount": 51.44,
+    "category": "JEDZENIE",
+    "description": "Restauracja Stara Kamienica"
+  },
+  {
+    "id": 347,
+    "date": "2024-07-22",
+    "amount": 37.0,
+    "category": "JEDZENIE",
+    "description": "KFC"
+  },
+  {
+    "id": 348,
+    "date": "2024-07-22",
+    "amount": 43.41,
+    "category": "TRANSPORT",
+    "description": "Flixbus"
+  },
+  {
+    "id": 349,
+    "date": "2024-07-22",
+    "amount": 64.4,
+    "category": "ROZRYWKA",
+    "description": "Spotify"
+  },
+  {
+    "id": 350,
+    "date": "2024-07-23",
+    "amount": 47.44,
+    "category": "JEDZENIE",
+    "description": "Sushi Bar"
+  },
+  {
+    "id": 351,
+    "date": "2024-07-23",
+    "amount": 39.39,
+    "category": "TRANSPORT",
+    "description": "BP paliwo"
+  },
+  {
+    "id": 352,
+    "date": "2024-07-23",
+    "amount": 186.55,
+    "category": "ZAKUPY",
+    "description": "Amazon"
+  },
+  {
+    "id": 353,
+    "date": "2024-07-24",
+    "amount": 17.23,
+    "category": "TRANSPORT",
+    "description": "Parking centrum"
+  },
+  {
+    "id": 354,
+    "date": "2024-07-25",
+    "amount": 12.75,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 355,
+    "date": "2024-07-25",
+    "amount": 18.59,
+    "category": "TRANSPORT",
+    "description": "PKP Intercity"
+  },
+  {
+    "id": 356,
+    "date": "2024-07-25",
+    "amount": 105.53,
+    "category": "ZAKUPY",
+    "description": "H&M"
+  },
+  {
+    "id": 357,
+    "date": "2024-07-26",
+    "amount": 1.0,
+    "category": "TRANSPORT",
+    "description": "Orlen paliwo"
+  },
+  {
+    "id": 358,
+    "date": "2024-07-26",
+    "amount": 186.09,
+    "category": "RACHUNKI",
+    "description": "Gaz PGNIG"
+  },
+  {
+    "id": 359,
+    "date": "2024-07-27",
+    "amount": 35.77,
+    "category": "JEDZENIE",
+    "description": "Kaufland"
+  },
+  {
+    "id": 360,
+    "date": "2024-07-27",
+    "amount": 74.35,
+    "category": "ZAKUPY",
+    "description": "Allegro"
+  },
+  {
+    "id": 361,
+    "date": "2024-07-28",
+    "amount": 54.17,
+    "category": "JEDZENIE",
+    "description": "Restauracja Stara Kamienica"
+  },
+  {
+    "id": 362,
+    "date": "2024-07-29",
+    "amount": 136.79,
+    "category": "ZAKUPY",
+    "description": "Reserved"
+  },
+  {
+    "id": 363,
+    "date": "2024-07-30",
+    "amount": 57.69,
+    "category": "JEDZENIE",
+    "description": "McDonald's"
+  },
+  {
+    "id": 364,
+    "date": "2024-07-30",
+    "amount": 37.67,
+    "category": "TRANSPORT",
+    "description": "Orlen paliwo"
+  },
+  {
+    "id": 365,
+    "date": "2024-07-30",
+    "amount": 80.08,
+    "category": "ZAKUPY",
+    "description": "H&M"
+  },
+  {
+    "id": 366,
+    "date": "2024-07-31",
+    "amount": 23.41,
+    "category": "JEDZENIE",
+    "description": "KFC"
+  },
+  {
+    "id": 367,
+    "date": "2024-07-31",
+    "amount": 20.88,
+    "category": "TRANSPORT",
+    "description": "Orlen paliwo"
+  },
+  {
+    "id": 368,
+    "date": "2024-08-01",
+    "amount": 71.54,
+    "category": "JEDZENIE",
+    "description": "Kaufland"
+  },
+  {
+    "id": 369,
+    "date": "2024-08-03",
+    "amount": 62.1,
+    "category": "JEDZENIE",
+    "description": "Sushi Bar"
+  },
+  {
+    "id": 370,
+    "date": "2024-08-03",
+    "amount": 40.5,
+    "category": "ROZRYWKA",
+    "description": "Koncert"
+  },
+  {
+    "id": 371,
+    "date": "2024-08-04",
+    "amount": 40.41,
+    "category": "JEDZENIE",
+    "description": "Burger King"
+  },
+  {
+    "id": 372,
+    "date": "2024-08-04",
+    "amount": 82.52,
+    "category": "ROZRYWKA",
+    "description": "Helios"
+  },
+  {
+    "id": 373,
+    "date": "2024-08-05",
+    "amount": 67.5,
+    "category": "JEDZENIE",
+    "description": "McDonald's"
+  },
+  {
+    "id": 374,
+    "date": "2024-08-05",
+    "amount": 95.29,
+    "category": "ROZRYWKA",
+    "description": "Bowling"
+  },
+  {
+    "id": 375,
+    "date": "2024-08-05",
+    "amount": 149.83,
+    "category": "ZAKUPY",
+    "description": "CCC buty"
+  },
+  {
+    "id": 376,
+    "date": "2024-08-06",
+    "amount": 56.94,
+    "category": "JEDZENIE",
+    "description": "Biedronka"
+  },
+  {
+    "id": 377,
+    "date": "2024-08-06",
+    "amount": 31.14,
+    "category": "TRANSPORT",
+    "description": "PKP Intercity"
+  },
+  {
+    "id": 378,
+    "date": "2024-08-06",
+    "amount": 54.95,
+    "category": "ZAKUPY",
+    "description": "Empik"
+  },
+  {
+    "id": 379,
+    "date": "2024-08-07",
+    "amount": 78.61,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 380,
+    "date": "2024-08-08",
+    "amount": 57.42,
+    "category": "TRANSPORT",
+    "description": "Autopay autostrada"
+  },
+  {
+    "id": 381,
+    "date": "2024-08-09",
+    "amount": 79.96,
+    "category": "JEDZENIE",
+    "description": "Kaufland"
+  },
+  {
+    "id": 382,
+    "date": "2024-08-09",
+    "amount": 86.2,
+    "category": "ROZRYWKA",
+    "description": "Netflix"
+  },
+  {
+    "id": 383,
+    "date": "2024-08-10",
+    "amount": 28.59,
+    "category": "TRANSPORT",
+    "description": "Parking centrum"
+  },
+  {
+    "id": 384,
+    "date": "2024-08-11",
+    "amount": 67.42,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 385,
+    "date": "2024-08-12",
+    "amount": 32.41,
+    "category": "JEDZENIE",
+    "description": "Warzywnik"
+  },
+  {
+    "id": 386,
+    "date": "2024-08-12",
+    "amount": 63.79,
+    "category": "ROZRYWKA",
+    "description": "HBO Max"
+  },
+  {
+    "id": 387,
+    "date": "2024-08-13",
+    "amount": 117.19,
+    "category": "ROZRYWKA",
+    "description": "HBO Max"
+  },
+  {
+    "id": 388,
+    "date": "2024-08-14",
+    "amount": 37.49,
+    "category": "TRANSPORT",
+    "description": "Bolt"
+  },
+  {
+    "id": 389,
+    "date": "2024-08-15",
+    "amount": 20.82,
+    "category": "JEDZENIE",
+    "description": "Kaufland"
+  },
+  {
+    "id": 390,
+    "date": "2024-08-16",
+    "amount": 32.8,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 391,
+    "date": "2024-08-16",
+    "amount": 92.27,
+    "category": "ZAKUPY",
+    "description": "CCC buty"
+  },
+  {
+    "id": 392,
+    "date": "2024-08-17",
+    "amount": 50.62,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 393,
+    "date": "2024-08-17",
+    "amount": 32.0,
+    "category": "TRANSPORT",
+    "description": "Shell paliwo"
+  },
+  {
+    "id": 394,
+    "date": "2024-08-18",
+    "amount": 56.98,
+    "category": "JEDZENIE",
+    "description": "Warzywnik"
+  },
+  {
+    "id": 395,
+    "date": "2024-08-18",
+    "amount": 21.55,
+    "category": "TRANSPORT",
+    "description": "Flixbus"
+  },
+  {
+    "id": 396,
+    "date": "2024-08-19",
+    "amount": 62.47,
+    "category": "JEDZENIE",
+    "description": "Burger King"
+  },
+  {
+    "id": 397,
+    "date": "2024-08-19",
+    "amount": 46.1,
+    "category": "TRANSPORT",
+    "description": "Autopay autostrada"
+  },
+  {
+    "id": 398,
+    "date": "2024-08-20",
+    "amount": 15.47,
+    "category": "TRANSPORT",
+    "description": "Uber"
+  },
+  {
+    "id": 399,
+    "date": "2024-08-21",
+    "amount": 41.6,
+    "category": "JEDZENIE",
+    "description": "Żabka"
+  },
+  {
+    "id": 400,
+    "date": "2024-08-22",
+    "amount": 44.69,
+    "category": "JEDZENIE",
+    "description": "Sushi Bar"
+  },
+  {
+    "id": 401,
+    "date": "2024-08-23",
+    "amount": 61.29,
+    "category": "JEDZENIE",
+    "description": "Biedronka"
+  },
+  {
+    "id": 402,
+    "date": "2024-08-23",
+    "amount": 121.16,
+    "category": "ROZRYWKA",
+    "description": "Cinema City"
+  },
+  {
+    "id": 403,
+    "date": "2024-08-23",
+    "amount": 120.08,
+    "category": "RACHUNKI",
+    "description": "Ubezpieczenie PZU"
+  },
+  {
+    "id": 404,
+    "date": "2024-08-23",
+    "amount": 115.17,
+    "category": "ZAKUPY",
+    "description": "CCC buty"
+  },
+  {
+    "id": 405,
+    "date": "2024-08-24",
+    "amount": 69.71,
+    "category": "JEDZENIE",
+    "description": "Warzywnik"
+  },
+  {
+    "id": 406,
+    "date": "2024-08-26",
+    "amount": 29.54,
+    "category": "JEDZENIE",
+    "description": "Sushi Bar"
+  },
+  {
+    "id": 407,
+    "date": "2024-08-26",
+    "amount": 160.45,
+    "category": "ZAKUPY",
+    "description": "H&M"
+  },
+  {
+    "id": 408,
+    "date": "2024-08-27",
+    "amount": 47.82,
+    "category": "JEDZENIE",
+    "description": "Burger King"
+  },
+  {
+    "id": 409,
+    "date": "2024-08-27",
+    "amount": 104.37,
+    "category": "ROZRYWKA",
+    "description": "Bowling"
+  },
+  {
+    "id": 410,
+    "date": "2024-08-28",
+    "amount": 69.28,
+    "category": "JEDZENIE",
+    "description": "KFC"
+  },
+  {
+    "id": 411,
+    "date": "2024-08-28",
+    "amount": 47.66,
+    "category": "ROZRYWKA",
+    "description": "Netflix"
+  },
+  {
+    "id": 412,
+    "date": "2024-08-29",
+    "amount": 49.83,
+    "category": "JEDZENIE",
+    "description": "Burger King"
+  },
+  {
+    "id": 413,
+    "date": "2024-08-30",
+    "amount": 56.97,
+    "category": "JEDZENIE",
+    "description": "Carrefour"
+  },
+  {
+    "id": 414,
+    "date": "2024-08-30",
+    "amount": 143.54,
+    "category": "ROZRYWKA",
+    "description": "Pub Złoty Kielich"
+  },
+  {
+    "id": 415,
+    "date": "2024-08-31",
+    "amount": 48.13,
+    "category": "JEDZENIE",
+    "description": "Burger King"
+  },
+  {
+    "id": 416,
+    "date": "2024-08-31",
+    "amount": 86.11,
+    "category": "ZAKUPY",
+    "description": "Empik"
+  },
+  {
+    "id": 417,
+    "date": "2024-09-01",
+    "amount": 19.83,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 418,
+    "date": "2024-09-01",
+    "amount": 40.6,
+    "category": "TRANSPORT",
+    "description": "Parking centrum"
+  },
+  {
+    "id": 419,
+    "date": "2024-09-03",
+    "amount": 47.5,
+    "category": "JEDZENIE",
+    "description": "Warzywnik"
+  },
+  {
+    "id": 420,
+    "date": "2024-09-03",
+    "amount": 277.59,
+    "category": "ZDROWIE",
+    "description": "Badania laboratoryjne"
+  },
+  {
+    "id": 421,
+    "date": "2024-09-03",
+    "amount": 161.87,
+    "category": "ZAKUPY",
+    "description": "Leroy Merlin"
+  },
+  {
+    "id": 647,
+    "date": "2024-09-03",
+    "amount": 1750.0,
+    "category": "ZAKUPY",
+    "description": "Nowy laptop – Lenovo ThinkPad"
+  },
+  {
+    "id": 422,
+    "date": "2024-09-05",
+    "amount": 68.45,
+    "category": "JEDZENIE",
+    "description": "Sushi Bar"
+  },
+  {
+    "id": 423,
+    "date": "2024-09-05",
+    "amount": 37.1,
+    "category": "TRANSPORT",
+    "description": "MPK bilet miesięczny"
+  },
+  {
+    "id": 424,
+    "date": "2024-09-05",
+    "amount": 81.59,
+    "category": "ZDROWIE",
+    "description": "Siłownia FitSport"
+  },
+  {
+    "id": 425,
+    "date": "2024-09-06",
+    "amount": 27.77,
+    "category": "JEDZENIE",
+    "description": "Piekarnia"
+  },
+  {
+    "id": 426,
+    "date": "2024-09-06",
+    "amount": 21.51,
+    "category": "TRANSPORT",
+    "description": "BP paliwo"
+  },
+  {
+    "id": 427,
+    "date": "2024-09-06",
+    "amount": 61.7,
+    "category": "ROZRYWKA",
+    "description": "Bowling"
+  },
+  {
+    "id": 428,
+    "date": "2024-09-07",
+    "amount": 132.46,
+    "category": "JEDZENIE",
+    "description": "Piekarnia"
+  },
+  {
+    "id": 429,
+    "date": "2024-09-07",
+    "amount": 27.42,
+    "category": "ROZRYWKA",
+    "description": "HBO Max"
+  },
+  {
+    "id": 430,
+    "date": "2024-09-08",
+    "amount": 14.91,
+    "category": "TRANSPORT",
+    "description": "Shell paliwo"
+  },
+  {
+    "id": 431,
+    "date": "2024-09-08",
+    "amount": 96.33,
+    "category": "ZDROWIE",
+    "description": "Fizjoterapeuta"
+  },
+  {
+    "id": 432,
+    "date": "2024-09-08",
+    "amount": 220.56,
+    "category": "ZAKUPY",
+    "description": "Zara"
+  },
+  {
+    "id": 433,
+    "date": "2024-09-09",
+    "amount": 24.83,
+    "category": "JEDZENIE",
+    "description": "McDonald's"
+  },
+  {
+    "id": 434,
+    "date": "2024-09-09",
+    "amount": 43.98,
+    "category": "TRANSPORT",
+    "description": "MPK bilet miesięczny"
+  },
+  {
+    "id": 435,
+    "date": "2024-09-10",
+    "amount": 48.56,
+    "category": "JEDZENIE",
+    "description": "Lidl"
+  },
+  {
+    "id": 436,
+    "date": "2024-09-11",
+    "amount": 78.92,
+    "category": "JEDZENIE",
+    "description": "Kaufland"
+  },
+  {
+    "id": 437,
+    "date": "2024-09-11",
+    "amount": 30.12,
+    "category": "TRANSPORT",
+    "description": "MPK bilet miesięczny"
+  },
+  {
+    "id": 438,
+    "date": "2024-09-11",
+    "amount": 124.24,
+    "category": "ROZRYWKA",
+    "description": "Steam"
+  },
+  {
+    "id": 439,
+    "date": "2024-09-11",
+    "amount": 149.36,
+    "category": "ZAKUPY",
+    "description": "Castorama"
+  },
+  {
+    "id": 440,
+    "date": "2024-09-12",
+    "amount": 73.81,
+    "category": "JEDZENIE",
+    "description": "Piekarnia"
+  },
+  {
+    "id": 441,
+    "date": "2024-09-12",
+    "amount": 48.76,
+    "category": "TRANSPORT",
+    "description": "Shell paliwo"
+  },
+  {
+    "id": 442,
+    "date": "2024-09-13",
+    "amount": 68.27,
+    "category": "JEDZENIE",
+    "description": "Burger King"
+  },
+  {
+    "id": 443,
+    "date": "2024-09-14",
+    "amount": 39.5,
+    "category": "JEDZENIE",
+    "description": "McDonald's"
+  },
+  {
+    "id": 444,
+    "date": "2024-09-15",
+    "amount": 57.06,
+    "category": "JEDZENIE",
+    "description": "McDonald's"
+  },
+  {
+    "id": 445,
+    "date": "2024-09-15",
+    "amount": 40.58,
+    "category": "TRANSPORT",
+    "description": "BlaBlacar"
+  },
+  {
+    "id": 446,
+    "date": "2024-09-15",
+    "amount": 42.84,
+    "category": "ROZRYWKA",
+    "description": "Kręgielnia"
+  },
+  {
+    "id": 447,
+    "date": "2024-09-15",
+    "amount": 122.68,
+    "category": "ZAKUPY",
+    "description": "CCC buty"
+  },
+  {
+    "id": 448,
+    "date": "2024-09-16",
+    "amount": 1.0,
+    "category": "JEDZENIE",
+    "description": "Carrefour"
+  },
+  {
+    "id": 449,
+    "date": "2024-09-16",
+    "amount": 121.06,
+    "category": "ROZRYWKA",
+    "description": "Teatr Miejski"
+  },
+  {
+    "id": 450,
+    "date": "2024-09-17",
+    "amount": 18.63,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 451,
+    "date": "2024-09-17",
+    "amount": 22.68,
+    "category": "TRANSPORT",
+    "description": "BlaBlacar"
+  },
+  {
+    "id": 452,
+    "date": "2024-09-18",
+    "amount": 74.06,
+    "category": "JEDZENIE",
+    "description": "Sushi Bar"
+  },
+  {
+    "id": 453,
+    "date": "2024-09-18",
+    "amount": 64.2,
+    "category": "TRANSPORT",
+    "description": "Flixbus"
+  },
+  {
+    "id": 454,
+    "date": "2024-09-19",
+    "amount": 47.34,
+    "category": "JEDZENIE",
+    "description": "Kaufland"
+  },
+  {
+    "id": 455,
+    "date": "2024-09-19",
+    "amount": 139.86,
+    "category": "ROZRYWKA",
+    "description": "Pub Złoty Kielich"
+  },
+  {
+    "id": 456,
+    "date": "2024-09-20",
+    "amount": 51.13,
+    "category": "JEDZENIE",
+    "description": "Lidl"
+  },
+  {
+    "id": 457,
+    "date": "2024-09-20",
+    "amount": 15.03,
+    "category": "TRANSPORT",
+    "description": "BlaBlacar"
+  },
+  {
+    "id": 458,
+    "date": "2024-09-21",
+    "amount": 52.97,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 459,
+    "date": "2024-09-21",
+    "amount": 280.28,
+    "category": "RACHUNKI",
+    "description": "Gaz PGNIG"
+  },
+  {
+    "id": 460,
+    "date": "2024-09-22",
+    "amount": 70.83,
+    "category": "JEDZENIE",
+    "description": "Carrefour"
+  },
+  {
+    "id": 461,
+    "date": "2024-09-22",
+    "amount": 41.42,
+    "category": "TRANSPORT",
+    "description": "BP paliwo"
+  },
+  {
+    "id": 462,
+    "date": "2024-09-23",
+    "amount": 25.36,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 463,
+    "date": "2024-09-23",
+    "amount": 69.37,
+    "category": "ROZRYWKA",
+    "description": "Cinema City"
+  },
+  {
+    "id": 464,
+    "date": "2024-09-24",
+    "amount": 65.03,
+    "category": "JEDZENIE",
+    "description": "Restauracja Stara Kamienica"
+  },
+  {
+    "id": 465,
+    "date": "2024-09-24",
+    "amount": 95.95,
+    "category": "ZAKUPY",
+    "description": "H&M"
+  },
+  {
+    "id": 466,
+    "date": "2024-09-25",
+    "amount": 62.48,
+    "category": "ZDROWIE",
+    "description": "Dentysta"
+  },
+  {
+    "id": 467,
+    "date": "2024-09-25",
+    "amount": 152.13,
+    "category": "ZAKUPY",
+    "description": "Zara"
+  },
+  {
+    "id": 468,
+    "date": "2024-09-26",
+    "amount": 9.53,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 469,
+    "date": "2024-09-26",
+    "amount": 59.67,
+    "category": "ROZRYWKA",
+    "description": "Steam"
+  },
+  {
+    "id": 470,
+    "date": "2024-09-27",
+    "amount": 79.56,
+    "category": "JEDZENIE",
+    "description": "McDonald's"
+  },
+  {
+    "id": 471,
+    "date": "2024-09-28",
+    "amount": 200.41,
+    "category": "ZAKUPY",
+    "description": "Reserved"
+  },
+  {
+    "id": 472,
+    "date": "2024-09-29",
+    "amount": 69.4,
+    "category": "JEDZENIE",
+    "description": "Kaufland"
+  },
+  {
+    "id": 473,
+    "date": "2024-09-29",
+    "amount": 68.94,
+    "category": "ZAKUPY",
+    "description": "Castorama"
+  },
+  {
+    "id": 474,
+    "date": "2024-09-30",
+    "amount": 15.93,
+    "category": "TRANSPORT",
+    "description": "Bolt"
+  },
+  {
+    "id": 475,
+    "date": "2024-10-01",
+    "amount": 52.8,
+    "category": "JEDZENIE",
+    "description": "Kaufland"
+  },
+  {
+    "id": 476,
+    "date": "2024-10-01",
+    "amount": 36.93,
+    "category": "TRANSPORT",
+    "description": "Shell paliwo"
+  },
+  {
+    "id": 477,
+    "date": "2024-10-02",
+    "amount": 70.5,
+    "category": "JEDZENIE",
+    "description": "Lidl"
+  },
+  {
+    "id": 478,
+    "date": "2024-10-02",
+    "amount": 51.51,
+    "category": "ZDROWIE",
+    "description": "Dentysta"
+  },
+  {
+    "id": 479,
+    "date": "2024-10-03",
+    "amount": 15.29,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 480,
+    "date": "2024-10-05",
+    "amount": 65.91,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 481,
+    "date": "2024-10-06",
+    "amount": 65.94,
+    "category": "JEDZENIE",
+    "description": "Lidl"
+  },
+  {
+    "id": 482,
+    "date": "2024-10-06",
+    "amount": 32.71,
+    "category": "ROZRYWKA",
+    "description": "HBO Max"
+  },
+  {
+    "id": 483,
+    "date": "2024-10-07",
+    "amount": 61.9,
+    "category": "JEDZENIE",
+    "description": "Żabka"
+  },
+  {
+    "id": 484,
+    "date": "2024-10-08",
+    "amount": 66.83,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 485,
+    "date": "2024-10-08",
+    "amount": 1.0,
+    "category": "TRANSPORT",
+    "description": "Flixbus"
+  },
+  {
+    "id": 486,
+    "date": "2024-10-10",
+    "amount": 27.78,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 487,
+    "date": "2024-10-10",
+    "amount": 35.53,
+    "category": "TRANSPORT",
+    "description": "Shell paliwo"
+  },
+  {
+    "id": 488,
+    "date": "2024-10-11",
+    "amount": 103.15,
+    "category": "JEDZENIE",
+    "description": "Warzywnik"
+  },
+  {
+    "id": 489,
+    "date": "2024-10-13",
+    "amount": 89.94,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 490,
+    "date": "2024-10-13",
+    "amount": 30.55,
+    "category": "TRANSPORT",
+    "description": "MPK bilet miesięczny"
+  },
+  {
+    "id": 491,
+    "date": "2024-10-14",
+    "amount": 45.98,
+    "category": "JEDZENIE",
+    "description": "Sushi Bar"
+  },
+  {
+    "id": 492,
+    "date": "2024-10-15",
+    "amount": 73.32,
+    "category": "JEDZENIE",
+    "description": "Lidl"
+  },
+  {
+    "id": 493,
+    "date": "2024-10-15",
+    "amount": 311.78,
+    "category": "RACHUNKI",
+    "description": "Abonament RTV"
+  },
+  {
+    "id": 494,
+    "date": "2024-10-15",
+    "amount": 102.39,
+    "category": "ZDROWIE",
+    "description": "Siłownia FitSport"
+  },
+  {
+    "id": 495,
+    "date": "2024-10-15",
+    "amount": 133.99,
+    "category": "ZAKUPY",
+    "description": "Castorama"
+  },
+  {
+    "id": 496,
+    "date": "2024-10-16",
+    "amount": 42.68,
+    "category": "JEDZENIE",
+    "description": "Burger King"
+  },
+  {
+    "id": 497,
+    "date": "2024-10-16",
+    "amount": 54.87,
+    "category": "ROZRYWKA",
+    "description": "PlayStation Store"
+  },
+  {
+    "id": 498,
+    "date": "2024-10-16",
+    "amount": 99.85,
+    "category": "ZAKUPY",
+    "description": "Castorama"
+  },
+  {
+    "id": 499,
+    "date": "2024-10-17",
+    "amount": 49.3,
+    "category": "JEDZENIE",
+    "description": "Warzywnik"
+  },
+  {
+    "id": 500,
+    "date": "2024-10-17",
+    "amount": 22.51,
+    "category": "TRANSPORT",
+    "description": "MPK bilet miesięczny"
+  },
+  {
+    "id": 501,
+    "date": "2024-10-17",
+    "amount": 50.88,
+    "category": "ROZRYWKA",
+    "description": "Helios"
+  },
+  {
+    "id": 502,
+    "date": "2024-10-17",
+    "amount": 156.2,
+    "category": "ZAKUPY",
+    "description": "RTV Euro AGD"
+  },
+  {
+    "id": 503,
+    "date": "2024-10-18",
+    "amount": 35.85,
+    "category": "ZDROWIE",
+    "description": "Apteka Dr. Max"
+  },
+  {
+    "id": 504,
+    "date": "2024-10-18",
+    "amount": 236.88,
+    "category": "ZAKUPY",
+    "description": "RTV Euro AGD"
+  },
+  {
+    "id": 648,
+    "date": "2024-10-18",
+    "amount": 730.0,
+    "category": "ROZRYWKA",
+    "description": "Weekend spa – Hotel Gorący Potok"
+  },
+  {
+    "id": 505,
+    "date": "2024-10-19",
+    "amount": 39.42,
+    "category": "TRANSPORT",
+    "description": "Bolt"
+  },
+  {
+    "id": 506,
+    "date": "2024-10-19",
+    "amount": 4.18,
+    "category": "ZDROWIE",
+    "description": "Apteka Dbam o Zdrowie"
+  },
+  {
+    "id": 507,
+    "date": "2024-10-20",
+    "amount": 44.72,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 508,
+    "date": "2024-10-20",
+    "amount": 45.03,
+    "category": "TRANSPORT",
+    "description": "Shell paliwo"
+  },
+  {
+    "id": 509,
+    "date": "2024-10-21",
+    "amount": 83.94,
+    "category": "JEDZENIE",
+    "description": "Restauracja Stara Kamienica"
+  },
+  {
+    "id": 510,
+    "date": "2024-10-21",
+    "amount": 240.48,
+    "category": "ZAKUPY",
+    "description": "Amazon"
+  },
+  {
+    "id": 511,
+    "date": "2024-10-22",
+    "amount": 51.31,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 512,
+    "date": "2024-10-22",
+    "amount": 20.5,
+    "category": "TRANSPORT",
+    "description": "Autopay autostrada"
+  },
+  {
+    "id": 513,
+    "date": "2024-10-22",
+    "amount": 60.34,
+    "category": "ZAKUPY",
+    "description": "CCC buty"
+  },
+  {
+    "id": 514,
+    "date": "2024-10-23",
+    "amount": 77.66,
+    "category": "JEDZENIE",
+    "description": "Lidl"
+  },
+  {
+    "id": 515,
+    "date": "2024-10-23",
+    "amount": 30.53,
+    "category": "TRANSPORT",
+    "description": "PKP Intercity"
+  },
+  {
+    "id": 516,
+    "date": "2024-10-24",
+    "amount": 47.68,
+    "category": "JEDZENIE",
+    "description": "Restauracja Stara Kamienica"
+  },
+  {
+    "id": 517,
+    "date": "2024-10-24",
+    "amount": 1.0,
+    "category": "ROZRYWKA",
+    "description": "Spotify"
+  },
+  {
+    "id": 518,
+    "date": "2024-10-24",
+    "amount": 312.13,
+    "category": "RACHUNKI",
+    "description": "Gaz PGNIG"
+  },
+  {
+    "id": 519,
+    "date": "2024-10-24",
+    "amount": 153.82,
+    "category": "ZDROWIE",
+    "description": "Siłownia FitSport"
+  },
+  {
+    "id": 520,
+    "date": "2024-10-25",
+    "amount": 110.25,
+    "category": "JEDZENIE",
+    "description": "Sushi Bar"
+  },
+  {
+    "id": 521,
+    "date": "2024-10-26",
+    "amount": 63.78,
+    "category": "JEDZENIE",
+    "description": "Żabka"
+  },
+  {
+    "id": 522,
+    "date": "2024-10-26",
+    "amount": 80.14,
+    "category": "ROZRYWKA",
+    "description": "PlayStation Store"
+  },
+  {
+    "id": 523,
+    "date": "2024-10-27",
+    "amount": 90.43,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 524,
+    "date": "2024-10-27",
+    "amount": 97.0,
+    "category": "ROZRYWKA",
+    "description": "Helios"
+  },
+  {
+    "id": 525,
+    "date": "2024-10-28",
+    "amount": 40.03,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 526,
+    "date": "2024-10-28",
+    "amount": 62.59,
+    "category": "TRANSPORT",
+    "description": "PKP Intercity"
+  },
+  {
+    "id": 527,
+    "date": "2024-10-29",
+    "amount": 63.22,
+    "category": "JEDZENIE",
+    "description": "Kaufland"
+  },
+  {
+    "id": 528,
+    "date": "2024-10-29",
+    "amount": 6.86,
+    "category": "TRANSPORT",
+    "description": "Orlen paliwo"
+  },
+  {
+    "id": 529,
+    "date": "2024-10-30",
+    "amount": 35.69,
+    "category": "JEDZENIE",
+    "description": "Piekarnia"
+  },
+  {
+    "id": 530,
+    "date": "2024-10-30",
+    "amount": 111.84,
+    "category": "ZDROWIE",
+    "description": "Lekarz prywatny"
+  },
+  {
+    "id": 531,
+    "date": "2024-10-31",
+    "amount": 81.06,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 532,
+    "date": "2024-10-31",
+    "amount": 49.16,
+    "category": "TRANSPORT",
+    "description": "Flixbus"
+  },
+  {
+    "id": 533,
+    "date": "2024-10-31",
+    "amount": 75.97,
+    "category": "ROZRYWKA",
+    "description": "Netflix"
+  },
+  {
+    "id": 534,
+    "date": "2024-10-31",
+    "amount": 140.24,
+    "category": "ZAKUPY",
+    "description": "H&M"
+  },
+  {
+    "id": 535,
+    "date": "2024-11-01",
+    "amount": 90.21,
+    "category": "JEDZENIE",
+    "description": "McDonald's"
+  },
+  {
+    "id": 536,
+    "date": "2024-11-01",
+    "amount": 18.03,
+    "category": "TRANSPORT",
+    "description": "Uber"
+  },
+  {
+    "id": 537,
+    "date": "2024-11-01",
+    "amount": 84.13,
+    "category": "ZAKUPY",
+    "description": "H&M"
+  },
+  {
+    "id": 538,
+    "date": "2024-11-02",
+    "amount": 76.16,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 539,
+    "date": "2024-11-02",
+    "amount": 1.0,
+    "category": "ROZRYWKA",
+    "description": "Steam"
+  },
+  {
+    "id": 540,
+    "date": "2024-11-02",
+    "amount": 245.49,
+    "category": "ZAKUPY",
+    "description": "Allegro"
+  },
+  {
+    "id": 541,
+    "date": "2024-11-03",
+    "amount": 64.82,
+    "category": "JEDZENIE",
+    "description": "Carrefour"
+  },
+  {
+    "id": 542,
+    "date": "2024-11-03",
+    "amount": 115.21,
+    "category": "ROZRYWKA",
+    "description": "PlayStation Store"
+  },
+  {
+    "id": 543,
+    "date": "2024-11-04",
+    "amount": 89.26,
+    "category": "JEDZENIE",
+    "description": "Żabka"
+  },
+  {
+    "id": 544,
+    "date": "2024-11-04",
+    "amount": 15.43,
+    "category": "TRANSPORT",
+    "description": "Shell paliwo"
+  },
+  {
+    "id": 545,
+    "date": "2024-11-04",
+    "amount": 11.21,
+    "category": "ROZRYWKA",
+    "description": "HBO Max"
+  },
+  {
+    "id": 546,
+    "date": "2024-11-04",
+    "amount": 120.65,
+    "category": "ZAKUPY",
+    "description": "Castorama"
+  },
+  {
+    "id": 547,
+    "date": "2024-11-05",
+    "amount": 53.4,
+    "category": "JEDZENIE",
+    "description": "Żabka"
+  },
+  {
+    "id": 548,
+    "date": "2024-11-05",
+    "amount": 31.95,
+    "category": "ROZRYWKA",
+    "description": "Bowling"
+  },
+  {
+    "id": 549,
+    "date": "2024-11-05",
+    "amount": 145.53,
+    "category": "ZAKUPY",
+    "description": "CCC buty"
+  },
+  {
+    "id": 649,
+    "date": "2024-11-05",
+    "amount": 420.0,
+    "category": "RACHUNKI",
+    "description": "Naprawa awaryjna – hydraulik"
+  },
+  {
+    "id": 550,
+    "date": "2024-11-06",
+    "amount": 173.55,
+    "category": "ZAKUPY",
+    "description": "Zara"
+  },
+  {
+    "id": 551,
+    "date": "2024-11-07",
+    "amount": 38.71,
+    "category": "JEDZENIE",
+    "description": "Piekarnia"
+  },
+  {
+    "id": 552,
+    "date": "2024-11-08",
+    "amount": 35.99,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 553,
+    "date": "2024-11-08",
+    "amount": 41.12,
+    "category": "TRANSPORT",
+    "description": "Parking centrum"
+  },
+  {
+    "id": 554,
+    "date": "2024-11-08",
+    "amount": 35.2,
+    "category": "ROZRYWKA",
+    "description": "Spotify"
+  },
+  {
+    "id": 555,
+    "date": "2024-11-09",
+    "amount": 76.52,
+    "category": "JEDZENIE",
+    "description": "Restauracja Stara Kamienica"
+  },
+  {
+    "id": 556,
+    "date": "2024-11-09",
+    "amount": 45.37,
+    "category": "TRANSPORT",
+    "description": "Flixbus"
+  },
+  {
+    "id": 557,
+    "date": "2024-11-10",
+    "amount": 38.68,
+    "category": "TRANSPORT",
+    "description": "BlaBlacar"
+  },
+  {
+    "id": 558,
+    "date": "2024-11-10",
+    "amount": 34.28,
+    "category": "ROZRYWKA",
+    "description": "PlayStation Store"
+  },
+  {
+    "id": 559,
+    "date": "2024-11-11",
+    "amount": 75.08,
+    "category": "JEDZENIE",
+    "description": "Burger King"
+  },
+  {
+    "id": 560,
+    "date": "2024-11-11",
+    "amount": 76.35,
+    "category": "ROZRYWKA",
+    "description": "Pub Złoty Kielich"
+  },
+  {
+    "id": 561,
+    "date": "2024-11-12",
+    "amount": 90.63,
+    "category": "JEDZENIE",
+    "description": "Lidl"
+  },
+  {
+    "id": 562,
+    "date": "2024-11-12",
+    "amount": 52.36,
+    "category": "TRANSPORT",
+    "description": "Uber"
+  },
+  {
+    "id": 563,
+    "date": "2024-11-12",
+    "amount": 83.38,
+    "category": "ROZRYWKA",
+    "description": "Teatr Miejski"
+  },
+  {
+    "id": 564,
+    "date": "2024-11-13",
+    "amount": 17.71,
+    "category": "TRANSPORT",
+    "description": "MPK bilet miesięczny"
+  },
+  {
+    "id": 565,
+    "date": "2024-11-13",
+    "amount": 21.87,
+    "category": "ROZRYWKA",
+    "description": "Spotify"
+  },
+  {
+    "id": 566,
+    "date": "2024-11-14",
+    "amount": 18.87,
+    "category": "JEDZENIE",
+    "description": "KFC"
+  },
+  {
+    "id": 567,
+    "date": "2024-11-14",
+    "amount": 50.29,
+    "category": "TRANSPORT",
+    "description": "Shell paliwo"
+  },
+  {
+    "id": 568,
+    "date": "2024-11-15",
+    "amount": 24.45,
+    "category": "TRANSPORT",
+    "description": "Parking centrum"
+  },
+  {
+    "id": 569,
+    "date": "2024-11-15",
+    "amount": 295.99,
+    "category": "RACHUNKI",
+    "description": "Telefon Play"
+  },
+  {
+    "id": 570,
+    "date": "2024-11-16",
+    "amount": 42.22,
+    "category": "JEDZENIE",
+    "description": "Lidl"
+  },
+  {
+    "id": 571,
+    "date": "2024-11-16",
+    "amount": 41.06,
+    "category": "TRANSPORT",
+    "description": "Flixbus"
+  },
+  {
+    "id": 572,
+    "date": "2024-11-16",
+    "amount": 86.4,
+    "category": "ROZRYWKA",
+    "description": "Kręgielnia"
+  },
+  {
+    "id": 573,
+    "date": "2024-11-17",
+    "amount": 27.33,
+    "category": "JEDZENIE",
+    "description": "Piekarnia"
+  },
+  {
+    "id": 574,
+    "date": "2024-11-18",
+    "amount": 53.43,
+    "category": "ROZRYWKA",
+    "description": "Bowling"
+  },
+  {
+    "id": 575,
+    "date": "2024-11-19",
+    "amount": 25.42,
+    "category": "TRANSPORT",
+    "description": "PKP Intercity"
+  },
+  {
+    "id": 576,
+    "date": "2024-11-20",
+    "amount": 38.59,
+    "category": "JEDZENIE",
+    "description": "Burger King"
+  },
+  {
+    "id": 577,
+    "date": "2024-11-20",
+    "amount": 69.1,
+    "category": "ROZRYWKA",
+    "description": "HBO Max"
+  },
+  {
+    "id": 578,
+    "date": "2024-11-20",
+    "amount": 219.74,
+    "category": "ZAKUPY",
+    "description": "Leroy Merlin"
+  },
+  {
+    "id": 579,
+    "date": "2024-11-21",
+    "amount": 42.39,
+    "category": "JEDZENIE",
+    "description": "Żabka"
+  },
+  {
+    "id": 580,
+    "date": "2024-11-21",
+    "amount": 131.73,
+    "category": "ZAKUPY",
+    "description": "H&M"
+  },
+  {
+    "id": 581,
+    "date": "2024-11-22",
+    "amount": 56.91,
+    "category": "JEDZENIE",
+    "description": "Sushi Bar"
+  },
+  {
+    "id": 582,
+    "date": "2024-11-23",
+    "amount": 72.46,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 583,
+    "date": "2024-11-23",
+    "amount": 214.41,
+    "category": "RACHUNKI",
+    "description": "Gaz PGNIG"
+  },
+  {
+    "id": 584,
+    "date": "2024-11-24",
+    "amount": 12.45,
+    "category": "TRANSPORT",
+    "description": "Autopay autostrada"
+  },
+  {
+    "id": 585,
+    "date": "2024-11-24",
+    "amount": 257.04,
+    "category": "ZAKUPY",
+    "description": "Castorama"
+  },
+  {
+    "id": 586,
+    "date": "2024-11-25",
+    "amount": 147.63,
+    "category": "ROZRYWKA",
+    "description": "Kręgielnia"
+  },
+  {
+    "id": 587,
+    "date": "2024-11-26",
+    "amount": 41.84,
+    "category": "JEDZENIE",
+    "description": "Carrefour"
+  },
+  {
+    "id": 588,
+    "date": "2024-11-26",
+    "amount": 96.95,
+    "category": "ZDROWIE",
+    "description": "Siłownia FitSport"
+  },
+  {
+    "id": 589,
+    "date": "2024-11-27",
+    "amount": 35.9,
+    "category": "ROZRYWKA",
+    "description": "Koncert"
+  },
+  {
+    "id": 590,
+    "date": "2024-11-28",
+    "amount": 96.36,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 591,
+    "date": "2024-11-28",
+    "amount": 24.22,
+    "category": "TRANSPORT",
+    "description": "Autopay autostrada"
+  },
+  {
+    "id": 592,
+    "date": "2024-11-29",
+    "amount": 94.95,
+    "category": "ROZRYWKA",
+    "description": "Helios"
+  },
+  {
+    "id": 593,
+    "date": "2024-11-30",
+    "amount": 15.87,
+    "category": "TRANSPORT",
+    "description": "Bolt"
+  },
+  {
+    "id": 594,
+    "date": "2024-12-01",
+    "amount": 64.87,
+    "category": "JEDZENIE",
+    "description": "KFC"
+  },
+  {
+    "id": 595,
+    "date": "2024-12-02",
+    "amount": 45.86,
+    "category": "TRANSPORT",
+    "description": "MPK bilet miesięczny"
+  },
+  {
+    "id": 596,
+    "date": "2024-12-02",
+    "amount": 67.92,
+    "category": "ROZRYWKA",
+    "description": "Cinema City"
+  },
+  {
+    "id": 597,
+    "date": "2024-12-02",
+    "amount": 356.48,
+    "category": "ZAKUPY",
+    "description": "RTV Euro AGD"
+  },
+  {
+    "id": 598,
+    "date": "2024-12-03",
+    "amount": 30.31,
+    "category": "JEDZENIE",
+    "description": "Piekarnia"
+  },
+  {
+    "id": 599,
+    "date": "2024-12-04",
+    "amount": 76.16,
+    "category": "JEDZENIE",
+    "description": "Żabka"
+  },
+  {
+    "id": 600,
+    "date": "2024-12-04",
+    "amount": 37.3,
+    "category": "TRANSPORT",
+    "description": "Flixbus"
+  },
+  {
+    "id": 601,
+    "date": "2024-12-05",
+    "amount": 85.99,
+    "category": "JEDZENIE",
+    "description": "Burger King"
+  },
+  {
+    "id": 602,
+    "date": "2024-12-05",
+    "amount": 79.98,
+    "category": "ROZRYWKA",
+    "description": "Netflix"
+  },
+  {
+    "id": 603,
+    "date": "2024-12-06",
+    "amount": 56.78,
+    "category": "JEDZENIE",
+    "description": "Kaufland"
+  },
+  {
+    "id": 604,
+    "date": "2024-12-07",
+    "amount": 60.43,
+    "category": "JEDZENIE",
+    "description": "Warzywnik"
+  },
+  {
+    "id": 605,
+    "date": "2024-12-07",
+    "amount": 20.77,
+    "category": "TRANSPORT",
+    "description": "BP paliwo"
+  },
+  {
+    "id": 606,
+    "date": "2024-12-08",
+    "amount": 35.74,
+    "category": "JEDZENIE",
+    "description": "Żabka"
+  },
+  {
+    "id": 607,
+    "date": "2024-12-08",
+    "amount": 78.48,
+    "category": "ZAKUPY",
+    "description": "Empik"
+  },
+  {
+    "id": 608,
+    "date": "2024-12-10",
+    "amount": 15.45,
+    "category": "JEDZENIE",
+    "description": "Burger King"
+  },
+  {
+    "id": 609,
+    "date": "2024-12-11",
+    "amount": 12.4,
+    "category": "TRANSPORT",
+    "description": "BlaBlacar"
+  },
+  {
+    "id": 610,
+    "date": "2024-12-12",
+    "amount": 41.95,
+    "category": "JEDZENIE",
+    "description": "Kaufland"
+  },
+  {
+    "id": 611,
+    "date": "2024-12-13",
+    "amount": 90.12,
+    "category": "JEDZENIE",
+    "description": "Burger King"
+  },
+  {
+    "id": 612,
+    "date": "2024-12-13",
+    "amount": 148.07,
+    "category": "ZAKUPY",
+    "description": "Amazon"
+  },
+  {
+    "id": 613,
+    "date": "2024-12-14",
+    "amount": 45.75,
+    "category": "JEDZENIE",
+    "description": "KFC"
+  },
+  {
+    "id": 614,
+    "date": "2024-12-14",
+    "amount": 92.55,
+    "category": "ROZRYWKA",
+    "description": "HBO Max"
+  },
+  {
+    "id": 615,
+    "date": "2024-12-15",
+    "amount": 74.87,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 616,
+    "date": "2024-12-15",
+    "amount": 106.73,
+    "category": "ROZRYWKA",
+    "description": "Spotify"
+  },
+  {
+    "id": 617,
+    "date": "2024-12-16",
+    "amount": 40.7,
+    "category": "JEDZENIE",
+    "description": "McDonald's"
+  },
+  {
+    "id": 618,
+    "date": "2024-12-17",
+    "amount": 76.37,
+    "category": "JEDZENIE",
+    "description": "Warzywnik"
+  },
+  {
+    "id": 619,
+    "date": "2024-12-17",
+    "amount": 91.6,
+    "category": "ROZRYWKA",
+    "description": "Helios"
+  },
+  {
+    "id": 620,
+    "date": "2024-12-18",
+    "amount": 40.65,
+    "category": "JEDZENIE",
+    "description": "Restauracja Stara Kamienica"
+  },
+  {
+    "id": 621,
+    "date": "2024-12-19",
+    "amount": 64.13,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 622,
+    "date": "2024-12-20",
+    "amount": 45.15,
+    "category": "JEDZENIE",
+    "description": "Żabka"
+  },
+  {
+    "id": 650,
+    "date": "2024-12-20",
+    "amount": 680.0,
+    "category": "ZAKUPY",
+    "description": "Prezenty świąteczne – ostatnia chwila"
+  },
+  {
+    "id": 623,
+    "date": "2024-12-21",
+    "amount": 57.37,
+    "category": "JEDZENIE",
+    "description": "Netto"
+  },
+  {
+    "id": 624,
+    "date": "2024-12-21",
+    "amount": 49.76,
+    "category": "ROZRYWKA",
+    "description": "Kręgielnia"
+  },
+  {
+    "id": 625,
+    "date": "2024-12-21",
+    "amount": 166.6,
+    "category": "ZDROWIE",
+    "description": "Apteka Dbam o Zdrowie"
+  },
+  {
+    "id": 626,
+    "date": "2024-12-22",
+    "amount": 99.27,
+    "category": "JEDZENIE",
+    "description": "Restauracja Stara Kamienica"
+  },
+  {
+    "id": 627,
+    "date": "2024-12-22",
+    "amount": 85.14,
+    "category": "ROZRYWKA",
+    "description": "Teatr Miejski"
+  },
+  {
+    "id": 628,
+    "date": "2024-12-23",
+    "amount": 28.45,
+    "category": "JEDZENIE",
+    "description": "KFC"
+  },
+  {
+    "id": 629,
+    "date": "2024-12-23",
+    "amount": 48.41,
+    "category": "TRANSPORT",
+    "description": "BP paliwo"
+  },
+  {
+    "id": 630,
+    "date": "2024-12-24",
+    "amount": 30.84,
+    "category": "JEDZENIE",
+    "description": "Biedronka"
+  },
+  {
+    "id": 631,
+    "date": "2024-12-24",
+    "amount": 44.17,
+    "category": "TRANSPORT",
+    "description": "Uber"
+  },
+  {
+    "id": 632,
+    "date": "2024-12-25",
+    "amount": 82.82,
+    "category": "JEDZENIE",
+    "description": "Biedronka"
+  },
+  {
+    "id": 633,
+    "date": "2024-12-25",
+    "amount": 216.69,
+    "category": "ZAKUPY",
+    "description": "CCC buty"
+  },
+  {
+    "id": 634,
+    "date": "2024-12-26",
+    "amount": 94.79,
+    "category": "JEDZENIE",
+    "description": "Aldi"
+  },
+  {
+    "id": 635,
+    "date": "2024-12-27",
+    "amount": 48.39,
+    "category": "ROZRYWKA",
+    "description": "Koncert"
+  },
+  {
+    "id": 636,
+    "date": "2024-12-28",
+    "amount": 83.7,
+    "category": "JEDZENIE",
+    "description": "Burger King"
+  },
+  {
+    "id": 637,
+    "date": "2024-12-29",
+    "amount": 44.62,
+    "category": "JEDZENIE",
+    "description": "Restauracja Stara Kamienica"
+  },
+  {
+    "id": 638,
+    "date": "2024-12-29",
+    "amount": 91.57,
+    "category": "ROZRYWKA",
+    "description": "HBO Max"
+  },
+  {
+    "id": 639,
+    "date": "2024-12-29",
+    "amount": 91.04,
+    "category": "ZAKUPY",
+    "description": "H&M"
+  },
+  {
+    "id": 640,
+    "date": "2024-12-31",
+    "amount": 52.99,
+    "category": "JEDZENIE",
+    "description": "Carrefour"
+  },
+  {
+    "id": 641,
+    "date": "2024-12-31",
+    "amount": 16.41,
+    "category": "TRANSPORT",
+    "description": "PKP Intercity"
+  },
+  {
+    "id": 651,
+    "date": "2024-12-31",
+    "amount": 310.0,
+    "category": "ROZRYWKA",
+    "description": "Sylwester – klub nocny"
+  }
+]

@@ -1,0 +1,33 @@
+# Maven build output
+target/
+
+# Maven Wrapper JAR (binary, pobierany automatycznie przez mvnw)
+.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# Wygenerowane pliki wynikowe (nie wersjonujemy outputu)
+raport.html
+summary.csv
+
+# macOS
+.DS_Store
+
+# Java compiled
+*.class
+
+# Logi
+*.log
